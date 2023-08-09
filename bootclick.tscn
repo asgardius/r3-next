@@ -11,10 +11,10 @@ script = ExtResource("1_52bti")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 234.0
-offset_right = 391.0
-offset_bottom = 260.0
+offset_left = 71.0
+offset_top = 258.0
+offset_right = 453.0
+offset_bottom = 284.0
 scale = Vector2(2.94857, 7.68)
 text = "Click here or press a gamepad button to continue"
 horizontal_alignment = 1

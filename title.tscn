@@ -13,9 +13,9 @@ script = ExtResource("1_fbo7u")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 20.0
-offset_top = 238.0
-offset_right = 181.0
-offset_bottom = 264.0
+offset_left = 108.0
+offset_top = 271.0
+offset_right = 269.0
+offset_bottom = 297.0
 scale = Vector2(6.38131, 6.11486)
 text = "The Red Robot Radio"
