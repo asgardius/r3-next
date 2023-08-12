@@ -6,7 +6,7 @@ var bgsound := AudioStreamPlayer.new()
 
 func _ready():
 	add_child(bgsound)
-	var titlemusic = load("res://x-force.mp3")
+	var titlemusic = load("res://music/x-force.mp3")
 	bgsound.stream = titlemusic
 	bgsound.play(0)
 	#pass # Replace with function body.
