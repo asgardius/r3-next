@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://mtl88mcwaqk0"]
+
+[ext_resource type="Script" path="res://levels/galaxy.gd" id="1_3c4wu"]
+[ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_3g4h6"]
+[ext_resource type="Script" path="res://levels/css1.gd" id="3_1tarv"]
+[ext_resource type="Texture2D" uid="uid://uscirt5qj0me" path="res://sprites/sat.png" id="4_as4jm"]
+[ext_resource type="Texture2D" uid="uid://dlqjt7dmqfn4m" path="res://sprites/iss.png" id="5_6ivog"]
+[ext_resource type="Texture2D" uid="uid://b8gbi6lsddd0g" path="res://sprites/tc.png" id="6_vp2ej"]
+[ext_resource type="Texture2D" uid="uid://dqukmd8obdfhi" path="res://sprites/bus.png" id="7_5wmcj"]
+[ext_resource type="Texture2D" uid="uid://bows52y4q3suo" path="res://sprites/antenna.png" id="8_rmhxj"]
+[ext_resource type="Script" path="res://levels/antenna.gd" id="9_diat7"]
+[ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="9_favs7"]
+
+[node name="galaxy" type="Node2D"]
+script = ExtResource("1_3c4wu")
+
+[node name="css1" type="Sprite2D" parent="."]
+position = Vector2(852, 455)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_3g4h6")
+script = ExtResource("3_1tarv")
+
+[node name="css2" type="Sprite2D" parent="."]
+position = Vector2(908, 688)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_3g4h6")
+script = ExtResource("3_1tarv")
+
+[node name="css3" type="Sprite2D" parent="."]
+position = Vector2(2931, 925)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_3g4h6")
+script = ExtResource("3_1tarv")
+
+[node name="sat1" type="Sprite2D" parent="."]
+position = Vector2(994, -488)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_as4jm")
+script = ExtResource("3_1tarv")
+
+[node name="sat2" type="Sprite2D" parent="."]
+position = Vector2(1177, -4)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_as4jm")
+script = ExtResource("3_1tarv")
+
+[node name="sat3" type="Sprite2D" parent="."]
+position = Vector2(2721, -234)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_as4jm")
+script = ExtResource("3_1tarv")
+
+[node name="iss1" type="Sprite2D" parent="."]
+position = Vector2(1517, 236)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_6ivog")
+script = ExtResource("3_1tarv")
+
+[node name="iss2" type="Sprite2D" parent="."]
+position = Vector2(1991, -175)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_6ivog")
+script = ExtResource("3_1tarv")
+
+[node name="iss3" type="Sprite2D" parent="."]
+position = Vector2(3236, 4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_6ivog")
+script = ExtResource("3_1tarv")
+
+[node name="tc1" type="Sprite2D" parent="."]
+position = Vector2(1633, 928)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_vp2ej")
+script = ExtResource("3_1tarv")
+
+[node name="tc2" type="Sprite2D" parent="."]
+position = Vector2(2258, 1316)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_vp2ej")
+script = ExtResource("3_1tarv")
+
+[node name="tc3" type="Sprite2D" parent="."]
+position = Vector2(3445, 1440)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_vp2ej")
+script = ExtResource("3_1tarv")
+
+[node name="bus1" type="Sprite2D" parent="."]
+position = Vector2(991, 1389)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_5wmcj")
+script = ExtResource("3_1tarv")
+
+[node name="bus2" type="Sprite2D" parent="."]
+position = Vector2(2266, 530)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_5wmcj")
+script = ExtResource("3_1tarv")
+
+[node name="bus3" type="Sprite2D" parent="."]
+position = Vector2(3960, 656)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_5wmcj")
+script = ExtResource("3_1tarv")
+
+[node name="antenna" type="Sprite2D" parent="."]
+position = Vector2(3980, -208)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_rmhxj")
+script = ExtResource("9_diat7")
+
+[node name="ss" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_favs7")
