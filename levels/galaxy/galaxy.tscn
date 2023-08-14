@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://mtl88mcwaqk0"]
+[gd_scene load_steps=5 format=3 uid="uid://mtl88mcwaqk0"]
 
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="1_hfecx"]
 [ext_resource type="Script" path="res://levels/galaxy/galaxy.gd" id="1_w4ic2"]
 [ext_resource type="Script" path="res://levels/galaxy/css1.gd" id="3_mowmg"]
+[ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="4_17fr3"]
 
 [node name="galaxy" type="Node2D"]
 script = ExtResource("1_w4ic2")
@@ -12,3 +13,8 @@ position = Vector2(852, 455)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_hfecx")
 script = ExtResource("3_mowmg")
+
+[node name="ss" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_17fr3")
