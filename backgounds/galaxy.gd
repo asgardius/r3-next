@@ -2,7 +2,7 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
-var galaxy = load("res://levels/galaxy.tscn").instantiate()
+var galaxy = load("res://levels/galaxy/galaxy.tscn").instantiate()
 
 func _ready():
 	get_tree().root.add_child.call_deferred(galaxy)
