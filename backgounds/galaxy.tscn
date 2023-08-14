@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnstwjy5mqdyo"]
+[gd_scene load_steps=4 format=3 uid="uid://cnstwjy5mqdyo"]
 
 [ext_resource type="Texture2D" uid="uid://bona2ytn3y3a5" path="res://backgounds/galaxy.png" id="1_bmyxf"]
+[ext_resource type="Script" path="res://backgounds/galaxy.gd" id="1_h1j80"]
 [ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="2_67tpf"]
 
 [node name="galaxy" type="Node2D"]
+script = ExtResource("1_h1j80")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1280.0
