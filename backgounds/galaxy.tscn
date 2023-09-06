@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnstwjy5mqdyo"]
+[gd_scene load_steps=4 format=3 uid="uid://cnstwjy5mqdyo"]
 
 [ext_resource type="Texture2D" uid="uid://bona2ytn3y3a5" path="res://backgounds/galaxy.png" id="1_bmyxf"]
 [ext_resource type="Script" path="res://backgounds/galaxy.gd" id="1_h1j80"]
+[ext_resource type="Script" path="res://fps.gd" id="3_t81vx"]
 
 [node name="galaxy" type="Node2D"]
 script = ExtResource("1_h1j80")
@@ -10,3 +11,8 @@ script = ExtResource("1_h1j80")
 offset_right = 1280.0
 offset_bottom = 720.0
 texture = ExtResource("1_bmyxf")
+
+[node name="fps" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("3_t81vx")

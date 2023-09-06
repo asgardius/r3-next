@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyaorf0qpfokg"]
+[gd_scene load_steps=3 format=3 uid="uid://dyaorf0qpfokg"]
 
 [ext_resource type="Script" path="res://bootclick.gd" id="1_52bti"]
+[ext_resource type="Script" path="res://fps.gd" id="2_gnh1w"]
 
 [node name="bootclick" type="Control"]
 layout_mode = 3
@@ -19,3 +20,9 @@ scale = Vector2(2.94857, 7.68)
 text = "Click here or press a gamepad button to continue"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="fps" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("2_gnh1w")
