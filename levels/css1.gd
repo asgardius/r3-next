@@ -13,7 +13,7 @@ func _process(delta):
 	var ym = 0
 	var velocity = Vector2.ZERO
 	if Input.get_joy_axis(0,JOY_AXIS_LEFT_X) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_X) < -0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) < -0.2:
-		velocity = (Vector2.RIGHT.rotated(rotation) * -400 * delta * Input.get_joy_axis(0,JOY_AXIS_LEFT_X))-Vector2.UP.rotated(rotation) * -400 *delta * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
+		velocity = (Vector2.RIGHT.rotated(rotation) * -50000 * delta * Input.get_joy_axis(0,JOY_AXIS_LEFT_X))-Vector2.UP.rotated(rotation) * -50000 *delta * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 	else:
 		if Input.is_action_pressed("ui_left"):
 			xm = -1
@@ -23,7 +23,7 @@ func _process(delta):
 			ym = -1
 		if Input.is_action_pressed("ui_down"):
 			ym = 1
-		velocity = (Vector2.RIGHT.rotated(rotation) * -400 * xm * delta)-Vector2.UP.rotated(rotation) * -400 * ym * delta
+		velocity = (Vector2.RIGHT.rotated(rotation) * -50000 * xm * delta)-Vector2.UP.rotated(rotation) * -50000 * ym * delta
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 	position += velocity * delta
