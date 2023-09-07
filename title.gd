@@ -3,6 +3,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
+var wait
 #var galaxy = preload("res://backgounds/galaxy.tscn").instantiate()
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
 
@@ -11,6 +12,7 @@ func _ready():
 	var titlemusic = load("res://music/x-force.mp3")
 	bgsound.stream = titlemusic
 	bgsound.play(0)
+	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 
 
@@ -20,7 +22,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if Time.get_ticks_msec() >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
+	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_level()
 

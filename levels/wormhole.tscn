@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b82huqhu88xt6"]
+[gd_scene load_steps=15 format=3 uid="uid://b82huqhu88xt6"]
 
 [ext_resource type="Script" path="res://levels/wormhole.gd" id="1_n4a5i"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_y6cio"]
@@ -10,102 +10,124 @@
 [ext_resource type="Texture2D" uid="uid://bows52y4q3suo" path="res://sprites/antenna.png" id="8_7cq8u"]
 [ext_resource type="Script" path="res://levels/antenna.gd" id="9_cr36o"]
 [ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="10_shrek"]
+[ext_resource type="Texture2D" uid="uid://dq06yjgibl0u1" path="res://sprites/asteroid.png" id="11_bwi0e"]
+[ext_resource type="Script" path="res://levels/ast1.gd" id="12_s1o5o"]
+[ext_resource type="Script" path="res://levels/ast2.gd" id="13_xw0he"]
+[ext_resource type="Script" path="res://levels/ast3.gd" id="14_xcrsk"]
 
 [node name="wormhole" type="Node2D"]
 script = ExtResource("1_n4a5i")
 
+[node name="ast1" type="Sprite2D" parent="."]
+position = Vector2(934, 569)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_bwi0e")
+script = ExtResource("12_s1o5o")
+
+[node name="ast2" type="Sprite2D" parent="."]
+position = Vector2(555, 705)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_bwi0e")
+script = ExtResource("13_xw0he")
+
+[node name="ast3" type="Sprite2D" parent="."]
+position = Vector2(1257, 644)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_bwi0e")
+script = ExtResource("14_xcrsk")
+
 [node name="css1" type="Sprite2D" parent="."]
-position = Vector2(852, 455)
+position = Vector2(911, 603)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_y6cio")
 script = ExtResource("3_4xg6i")
 
 [node name="css2" type="Sprite2D" parent="."]
-position = Vector2(908, 688)
+position = Vector2(1246, 626)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_y6cio")
 script = ExtResource("3_4xg6i")
 
 [node name="css3" type="Sprite2D" parent="."]
-position = Vector2(2931, 925)
+position = Vector2(2131, 1189)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_y6cio")
 script = ExtResource("3_4xg6i")
 
 [node name="sat1" type="Sprite2D" parent="."]
-position = Vector2(994, -488)
+position = Vector2(1174, -152)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_4mf4s")
 script = ExtResource("3_4xg6i")
 
 [node name="sat2" type="Sprite2D" parent="."]
-position = Vector2(1177, -4)
+position = Vector2(1560, 238)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_4mf4s")
 script = ExtResource("3_4xg6i")
 
 [node name="sat3" type="Sprite2D" parent="."]
-position = Vector2(2721, -234)
+position = Vector2(2717, 282)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_4mf4s")
 script = ExtResource("3_4xg6i")
 
 [node name="iss1" type="Sprite2D" parent="."]
-position = Vector2(1517, 236)
+position = Vector2(2122, 101)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_hhxgq")
 script = ExtResource("3_4xg6i")
 
 [node name="iss2" type="Sprite2D" parent="."]
-position = Vector2(1991, -175)
+position = Vector2(2127, -175)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_hhxgq")
 script = ExtResource("3_4xg6i")
 
 [node name="iss3" type="Sprite2D" parent="."]
-position = Vector2(3236, 4)
+position = Vector2(3412, -48)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_hhxgq")
 script = ExtResource("3_4xg6i")
 
 [node name="tc1" type="Sprite2D" parent="."]
-position = Vector2(1633, 928)
+position = Vector2(2139, 985)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_f0a2t")
 script = ExtResource("3_4xg6i")
 
 [node name="tc2" type="Sprite2D" parent="."]
-position = Vector2(2258, 1316)
+position = Vector2(2135, 651)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_f0a2t")
 script = ExtResource("3_4xg6i")
 
 [node name="tc3" type="Sprite2D" parent="."]
-position = Vector2(3445, 1440)
+position = Vector2(2121, 1646)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_f0a2t")
 script = ExtResource("3_4xg6i")
 
 [node name="bus1" type="Sprite2D" parent="."]
-position = Vector2(991, 1389)
+position = Vector2(2879, 1253)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_ymm87")
 script = ExtResource("3_4xg6i")
 
 [node name="bus2" type="Sprite2D" parent="."]
-position = Vector2(2266, 530)
+position = Vector2(2113, 357)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_ymm87")
 script = ExtResource("3_4xg6i")
 
 [node name="bus3" type="Sprite2D" parent="."]
-position = Vector2(3960, 656)
+position = Vector2(3977, 281)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_ymm87")
 script = ExtResource("3_4xg6i")
 
 [node name="antenna" type="Sprite2D" parent="."]
-position = Vector2(3980, -208)
+position = Vector2(3988, -111)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_7cq8u")
 script = ExtResource("9_cr36o")
