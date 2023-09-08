@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://cx3x5lteh72xk"]
+
+[ext_resource type="Texture2D" uid="uid://bqyx3wu4vf408" path="res://backgounds/supernova.png" id="1_0bxam"]
+[ext_resource type="Script" path="res://backgounds/supernova.gd" id="1_3jmy0"]
+[ext_resource type="Script" path="res://backgounds/Label3.gd" id="3_h0a4u"]
+[ext_resource type="Script" path="res://fps.gd" id="3_tbeol"]
+
+[node name="supernova" type="Node2D"]
+script = ExtResource("1_3jmy0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_0bxam")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 59.0
+offset_top = 89.0
+offset_right = 99.0
+offset_bottom = 112.0
+scale = Vector2(6.32794, 4.85128)
+text = "Your spaceship crashed"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 108.0
+offset_top = 361.0
+offset_right = 475.0
+offset_bottom = 387.0
+scale = Vector2(2.92998, 7.01768)
+text = "Click here or press any button to return to title"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 158.0
+offset_top = 593.0
+offset_right = 198.0
+offset_bottom = 616.0
+script = ExtResource("3_h0a4u")
+
+[node name="fps" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("3_tbeol")

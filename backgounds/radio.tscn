@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4oc3wj8vu5p0"]
+
+[ext_resource type="Script" path="res://backgounds/radio.gd" id="1_hxbaj"]
+[ext_resource type="Texture2D" uid="uid://bows52y4q3suo" path="res://sprites/antenna.png" id="2_26tjs"]
+[ext_resource type="Script" path="res://backgounds/Label3.gd" id="3_765rj"]
+[ext_resource type="Script" path="res://fps.gd" id="4_5mydr"]
+
+[node name="radio" type="Node2D"]
+script = ExtResource("1_hxbaj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 438.0
+offset_top = 14.0
+offset_right = 864.0
+offset_bottom = 751.0
+scale = Vector2(1, 0.92)
+texture = ExtResource("2_26tjs")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 461.0
+offset_top = 29.0
+offset_right = 531.0
+offset_bottom = 55.0
+scale = Vector2(6.32794, 4.85128)
+text = "Good Job"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 108.0
+offset_top = 361.0
+offset_right = 475.0
+offset_bottom = 387.0
+scale = Vector2(2.92998, 7.01768)
+text = "Click here or press any button to return to title"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 158.0
+offset_top = 593.0
+offset_right = 198.0
+offset_bottom = 616.0
+script = ExtResource("3_765rj")
+
+[node name="fps" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_5mydr")
