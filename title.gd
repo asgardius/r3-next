@@ -29,6 +29,7 @@ func _input(event):
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
+		Global.live = 1
 		if randi() % 2 == 0:
 			get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
 		else:
