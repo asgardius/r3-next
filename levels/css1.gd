@@ -35,4 +35,7 @@ func _process(delta):
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 	position += velocity * delta
+	if position.x < 782 && position.x > 496:
+		if position.y < 468 && position.y > 270:
+			Global.live = 2
 	#pass
