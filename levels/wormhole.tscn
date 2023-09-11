@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b82huqhu88xt6"]
+[gd_scene load_steps=21 format=3 uid="uid://b82huqhu88xt6"]
 
 [ext_resource type="Script" path="res://levels/wormhole.gd" id="1_n4a5i"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_y6cio"]
@@ -14,6 +14,16 @@
 [ext_resource type="Script" path="res://levels/ast1.gd" id="12_s1o5o"]
 [ext_resource type="Script" path="res://levels/ast2.gd" id="13_xw0he"]
 [ext_resource type="Script" path="res://levels/ast3.gd" id="14_xcrsk"]
+[ext_resource type="Script" path="res://levels/wall1.gd" id="15_yx2oo"]
+[ext_resource type="Script" path="res://levels/wall2.gd" id="16_el0w3"]
+[ext_resource type="Script" path="res://levels/wall3.gd" id="17_pl58r"]
+[ext_resource type="Script" path="res://levels/wall4.gd" id="18_ptooy"]
+
+[sub_resource type="Gradient" id="Gradient_3wb6i"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8jpuy"]
+gradient = SubResource("Gradient_3wb6i")
 
 [node name="wormhole" type="Node2D"]
 script = ExtResource("1_n4a5i")
@@ -136,3 +146,27 @@ script = ExtResource("9_cr36o")
 position = Vector2(640, 360)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("10_shrek")
+
+[node name="wall1" type="Sprite2D" parent="."]
+position = Vector2(338.5, 688.5)
+scale = Vector2(0.332031, 2539)
+texture = SubResource("GradientTexture1D_8jpuy")
+script = ExtResource("15_yx2oo")
+
+[node name="wall2" type="Sprite2D" parent="."]
+position = Vector2(4269, 690.75)
+scale = Vector2(0.332031, 2534.5)
+texture = SubResource("GradientTexture1D_8jpuy")
+script = ExtResource("16_el0w3")
+
+[node name="wall3" type="Sprite2D" parent="."]
+position = Vector2(2306.5, -520.5)
+scale = Vector2(15.707, 111)
+texture = SubResource("GradientTexture1D_8jpuy")
+script = ExtResource("17_pl58r")
+
+[node name="wall4" type="Sprite2D" parent="."]
+position = Vector2(2306.5, 1897.5)
+scale = Vector2(15.707, 111)
+texture = SubResource("GradientTexture1D_8jpuy")
+script = ExtResource("18_ptooy")

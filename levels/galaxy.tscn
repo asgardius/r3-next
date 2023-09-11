@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://mtl88mcwaqk0"]
+[gd_scene load_steps=21 format=3 uid="uid://mtl88mcwaqk0"]
 
 [ext_resource type="Script" path="res://levels/galaxy.gd" id="1_3c4wu"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_3g4h6"]
@@ -14,6 +14,16 @@
 [ext_resource type="Script" path="res://levels/ast1.gd" id="12_g6l6s"]
 [ext_resource type="Script" path="res://levels/ast2.gd" id="13_s46s0"]
 [ext_resource type="Script" path="res://levels/ast3.gd" id="14_cu7w4"]
+[ext_resource type="Script" path="res://levels/wall1.gd" id="15_jbm4l"]
+[ext_resource type="Script" path="res://levels/wall2.gd" id="16_dnhp8"]
+[ext_resource type="Script" path="res://levels/wall3.gd" id="17_jrw7x"]
+[ext_resource type="Script" path="res://levels/wall4.gd" id="18_fasi1"]
+
+[sub_resource type="Gradient" id="Gradient_raqpb"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4c28c"]
+gradient = SubResource("Gradient_raqpb")
 
 [node name="galaxy" type="Node2D"]
 script = ExtResource("1_3c4wu")
@@ -136,3 +146,27 @@ script = ExtResource("9_diat7")
 position = Vector2(640, 360)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_favs7")
+
+[node name="wall1" type="Sprite2D" parent="."]
+position = Vector2(357.5, 483.5)
+scale = Vector2(0.332031, 2539)
+texture = SubResource("GradientTexture1D_4c28c")
+script = ExtResource("15_jbm4l")
+
+[node name="wall2" type="Sprite2D" parent="."]
+position = Vector2(4288, 485.75)
+scale = Vector2(0.332031, 2534.5)
+texture = SubResource("GradientTexture1D_4c28c")
+script = ExtResource("16_dnhp8")
+
+[node name="wall3" type="Sprite2D" parent="."]
+position = Vector2(2325.5, -725.5)
+scale = Vector2(15.707, 111)
+texture = SubResource("GradientTexture1D_4c28c")
+script = ExtResource("17_jrw7x")
+
+[node name="wall4" type="Sprite2D" parent="."]
+position = Vector2(2325.5, 1692.5)
+scale = Vector2(15.707, 111)
+texture = SubResource("GradientTexture1D_4c28c")
+script = ExtResource("18_fasi1")
