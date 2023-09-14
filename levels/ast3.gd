@@ -21,13 +21,13 @@ func _process(delta):
 		#var mousepos = get_viewport().get_mouse_position() - origmpos
 		self.position = Vector2(origpos.x+(Global.mousepos.x*3), origpos.y+(Global.mousepos.y*3))
 	else:
-		if Input.is_action_pressed("ui_left"):
+		if Input.is_action_pressed("ui_left") || Input.is_key_pressed(KEY_A):
 			xm = -1
-		if Input.is_action_pressed("ui_right"):
+		if Input.is_action_pressed("ui_right") || Input.is_key_pressed(KEY_D):
 			xm = 1
-		if Input.is_action_pressed("ui_up"):
+		if Input.is_action_pressed("ui_up") || Input.is_key_pressed(KEY_W):
 			ym = -1
-		if Input.is_action_pressed("ui_down"):
+		if Input.is_action_pressed("ui_down") || Input.is_key_pressed(KEY_S):
 			ym = 1
 		velocity = (Vector2.RIGHT.rotated(rotation) * -30000 * xm * delta)-Vector2.UP.rotated(rotation) * -30000 * ym * delta
 		origpos = self.position
