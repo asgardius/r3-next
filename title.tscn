@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://p010jtursgo2"]
+[gd_scene load_steps=10 format=3 uid="uid://p010jtursgo2"]
 
 [ext_resource type="Script" path="res://title.gd" id="1_fbo7u"]
 [ext_resource type="Script" path="res://Game name.gd" id="2_bbb0f"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://fps.gd" id="3_tsoef"]
 [ext_resource type="Script" path="res://start.gd" id="4_cc41w"]
 [ext_resource type="Script" path="res://exit.gd" id="5_scoec"]
+[ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="8_tne35"]
+[ext_resource type="Script" path="res://player.gd" id="9_7e625"]
 
 [node name="title" type="Control"]
 layout_mode = 3
@@ -25,6 +27,12 @@ scale = Vector2(2, 1.96)
 stream = ExtResource("2_bhkux")
 autoplay = true
 script = ExtResource("3_bn1r3")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(631, 499)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_tne35")
+script = ExtResource("9_7e625")
 
 [node name="fps" type="Label" parent="."]
 layout_mode = 0
