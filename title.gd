@@ -9,7 +9,7 @@ var wait
 
 func _ready():
 	add_child(bgsound)
-	var titlemusic = load("res://music/x-force.mp3")
+	var titlemusic = load("res://music/x-force.ogg")
 	bgsound.stream = titlemusic
 	bgsound.play(0)
 	wait = Time.get_ticks_msec()

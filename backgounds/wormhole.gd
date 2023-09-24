@@ -52,7 +52,7 @@ func _complete():
 	# it happens after already loading the main scene.
 		Global.time = Time.get_ticks_msec() - wait
 		get_tree().root.remove_child(wormhole)
-		get_tree().change_scene_to_file("res://backgounds/radio.tscn")
+		get_tree().change_scene_to_file("res://levels/credits.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
