@@ -21,7 +21,7 @@ func _process(delta):
 	var bgtime = bgsound.get_playback_position() + AudioServer.get_time_since_last_mix()
 	# Compensate for output latency.
 	bgtime -= AudioServer.get_output_latency()
-	print("Time is: ", bgtime)
+	#print("Time is: ", bgtime)
 	if bgtime < 0:
 		if playstart:
 			if playindex == 0:
