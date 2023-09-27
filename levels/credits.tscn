@@ -74,6 +74,9 @@ Provided as a replacement for a HP 14 laptop that died while running Genshin Imp
 
 Feedback
 El Suavecito
+Vix
+Goldfish
+Tood
 
 Creative Staff
 Page Asgardius
@@ -147,6 +150,26 @@ Zalza
 Credit roll 3
 Sweetest Sin
 JosSs
+
+Encoders
+
+Main records
+
+FLAC encoder
+xiph.org
+
+X264
+Videolan
+
+Game assets
+
+Libtheora
+xiph.org
+
+Libvorbis
+xiph.org
+
+CD version uses PCM audio instead libvorbis for music
 
 Engine development
 
@@ -412,8 +435,22 @@ Zher Huei Lee (leezh)
 ZuBsPaCe
 风青山 (Rindbee)
 
+Asgardius Virtualx Project contributors
+Evelyn Debian
+Kimberly Arch
+Sarahi Syslinux
+Eric Asgardius
+Astroboy
+Sakura Nakayama
+Goldfish
+
+The Red Robot Radio is the first game from Asgardius Virtualx project
+
+Visit Asgardius Virtualx homepage at https://virtualx.asgardius.company/
+
 Project website
 Hosting provided by Scaleway Dedibox
+
 Source code hosted at https://git.asgardius.company/asgardius/r3-next
 
 You can listen the oficial radio station at https://asteroid.asgardius.company/public/r3
