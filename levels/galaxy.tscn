@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://mtl88mcwaqk0"]
+[gd_scene load_steps=22 format=3 uid="uid://mtl88mcwaqk0"]
 
 [ext_resource type="Script" path="res://levels/galaxy.gd" id="1_3c4wu"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_3g4h6"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://levels/ast2.gd" id="13_s46s0"]
 [ext_resource type="Script" path="res://levels/ast3.gd" id="14_cu7w4"]
 [ext_resource type="Script" path="res://levels/wall1.gd" id="15_jbm4l"]
+[ext_resource type="Script" path="res://levels/ss.gd" id="15_n6ui8"]
 [ext_resource type="Script" path="res://levels/wall2.gd" id="16_dnhp8"]
 [ext_resource type="Script" path="res://levels/wall3.gd" id="17_jrw7x"]
 [ext_resource type="Script" path="res://levels/wall4.gd" id="18_fasi1"]
@@ -146,6 +147,7 @@ script = ExtResource("9_diat7")
 position = Vector2(640, 360)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_favs7")
+script = ExtResource("15_n6ui8")
 
 [node name="wall1" type="Sprite2D" parent="."]
 position = Vector2(357.5, 483.5)

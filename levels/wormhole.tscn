@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b82huqhu88xt6"]
+[gd_scene load_steps=22 format=3 uid="uid://b82huqhu88xt6"]
 
 [ext_resource type="Script" path="res://levels/wormhole.gd" id="1_n4a5i"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_y6cio"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://levels/ast1.gd" id="12_s1o5o"]
 [ext_resource type="Script" path="res://levels/ast2.gd" id="13_xw0he"]
 [ext_resource type="Script" path="res://levels/ast3.gd" id="14_xcrsk"]
+[ext_resource type="Script" path="res://levels/ss.gd" id="15_hsg5e"]
 [ext_resource type="Script" path="res://levels/wall1.gd" id="15_yx2oo"]
 [ext_resource type="Script" path="res://levels/wall2.gd" id="16_el0w3"]
 [ext_resource type="Script" path="res://levels/wall3.gd" id="17_pl58r"]
@@ -146,6 +147,7 @@ script = ExtResource("9_cr36o")
 position = Vector2(640, 360)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("10_shrek")
+script = ExtResource("15_hsg5e")
 
 [node name="wall1" type="Sprite2D" parent="."]
 position = Vector2(338.5, 688.5)

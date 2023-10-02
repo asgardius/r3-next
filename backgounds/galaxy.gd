@@ -41,6 +41,8 @@ func _crash():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 		Global.time = Time.get_ticks_msec() - wait
+		await get_tree().create_timer(1.0).timeout
+		queue_free()
 		get_tree().root.remove_child(galaxy)
 		get_tree().change_scene_to_file("res://backgounds/supernova.tscn")
 		#get_tree().root.add_child(title)
