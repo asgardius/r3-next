@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://mtl88mcwaqk0"]
+[gd_scene load_steps=25 format=3 uid="uid://mtl88mcwaqk0"]
 
 [ext_resource type="Script" path="res://levels/galaxy.gd" id="1_3c4wu"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_3g4h6"]
@@ -19,6 +19,9 @@
 [ext_resource type="Script" path="res://levels/wall2.gd" id="16_dnhp8"]
 [ext_resource type="Script" path="res://levels/wall3.gd" id="17_jrw7x"]
 [ext_resource type="Script" path="res://levels/wall4.gd" id="18_fasi1"]
+[ext_resource type="Script" path="res://fps.gd" id="20_wbfof"]
+[ext_resource type="Script" path="res://levels/timelimit.gd" id="21_4jblw"]
+[ext_resource type="Script" path="res://backgounds/Home.gd" id="21_c1w3x"]
 
 [sub_resource type="Gradient" id="Gradient_raqpb"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
@@ -60,25 +63,25 @@ texture = ExtResource("2_3g4h6")
 script = ExtResource("3_1tarv")
 
 [node name="css3" type="Sprite2D" parent="."]
-position = Vector2(2931, 925)
+position = Vector2(2745, 708)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_3g4h6")
 script = ExtResource("3_1tarv")
 
 [node name="sat1" type="Sprite2D" parent="."]
-position = Vector2(994, -488)
+position = Vector2(858, -50)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_as4jm")
 script = ExtResource("3_1tarv")
 
 [node name="sat2" type="Sprite2D" parent="."]
-position = Vector2(1177, -4)
+position = Vector2(1389, -115)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_as4jm")
 script = ExtResource("3_1tarv")
 
 [node name="sat3" type="Sprite2D" parent="."]
-position = Vector2(2721, -234)
+position = Vector2(2726, -53)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_as4jm")
 script = ExtResource("3_1tarv")
@@ -90,13 +93,13 @@ texture = ExtResource("5_6ivog")
 script = ExtResource("3_1tarv")
 
 [node name="iss2" type="Sprite2D" parent="."]
-position = Vector2(1991, -175)
+position = Vector2(2021, -24)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_6ivog")
 script = ExtResource("3_1tarv")
 
 [node name="iss3" type="Sprite2D" parent="."]
-position = Vector2(3236, 4)
+position = Vector2(2747, 261)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_6ivog")
 script = ExtResource("3_1tarv")
@@ -108,37 +111,37 @@ texture = ExtResource("6_vp2ej")
 script = ExtResource("3_1tarv")
 
 [node name="tc2" type="Sprite2D" parent="."]
-position = Vector2(2258, 1316)
+position = Vector2(2273, 1084)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_vp2ej")
 script = ExtResource("3_1tarv")
 
 [node name="tc3" type="Sprite2D" parent="."]
-position = Vector2(3445, 1440)
+position = Vector2(3012, 1118)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_vp2ej")
 script = ExtResource("3_1tarv")
 
 [node name="bus1" type="Sprite2D" parent="."]
-position = Vector2(991, 1389)
+position = Vector2(966, 1066)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_5wmcj")
 script = ExtResource("3_1tarv")
 
 [node name="bus2" type="Sprite2D" parent="."]
-position = Vector2(2266, 530)
+position = Vector2(2266, 621)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_5wmcj")
 script = ExtResource("3_1tarv")
 
 [node name="bus3" type="Sprite2D" parent="."]
-position = Vector2(3960, 656)
+position = Vector2(3139, 268)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("7_5wmcj")
 script = ExtResource("3_1tarv")
 
 [node name="antenna" type="Sprite2D" parent="."]
-position = Vector2(3953, 251)
+position = Vector2(3031, -11)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_rmhxj")
 script = ExtResource("9_diat7")
@@ -156,19 +159,37 @@ texture = SubResource("GradientTexture1D_4c28c")
 script = ExtResource("15_jbm4l")
 
 [node name="wall2" type="Sprite2D" parent="."]
-position = Vector2(4288, 485.75)
+position = Vector2(3618, 471)
 scale = Vector2(0.332031, 2534.5)
 texture = SubResource("GradientTexture1D_4c28c")
 script = ExtResource("16_dnhp8")
 
 [node name="wall3" type="Sprite2D" parent="."]
-position = Vector2(2325.5, -725.5)
+position = Vector2(2326, -282)
 scale = Vector2(15.707, 111)
 texture = SubResource("GradientTexture1D_4c28c")
 script = ExtResource("17_jrw7x")
 
 [node name="wall4" type="Sprite2D" parent="."]
-position = Vector2(2325.5, 1692.5)
+position = Vector2(2320, 1345)
 scale = Vector2(15.707, 111)
 texture = SubResource("GradientTexture1D_4c28c")
 script = ExtResource("18_fasi1")
+
+[node name="fps" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("20_wbfof")
+
+[node name="timelimit" type="Label" parent="."]
+offset_left = 204.0
+offset_right = 244.0
+offset_bottom = 23.0
+script = ExtResource("21_4jblw")
+
+[node name="Home" type="TextureButton" parent="."]
+offset_left = 52.0
+offset_top = 39.0
+offset_right = 125.0
+offset_bottom = 110.0
+script = ExtResource("21_c1w3x")
