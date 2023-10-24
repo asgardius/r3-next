@@ -32,10 +32,13 @@ func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 		Global.live = 1
-		if randi() % 2 == 0:
+		var level = randi() % 3
+		if level == 0:
 			get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
-		else:
+		elif level == 1:
 			get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+		else:
+			get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
