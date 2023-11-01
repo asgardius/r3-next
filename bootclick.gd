@@ -2,11 +2,15 @@ extends Node
 
 var title = preload("res://title.tscn").instantiate()
 var boot = preload("res://bootclick.tscn").instantiate()
+const loadgame = preload("res://load.gd")
+const savegame = preload("res://save.gd")
 
 # Called when the node enters the scene tree for the first time.
 	
 func _ready():
-	pass # Replace with function body.
+	loadgame.new()
+	print(Global.level1max)
+	#pass # Replace with function body.
 	#add_child(title)
 
 
