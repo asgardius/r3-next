@@ -1,5 +1,9 @@
 # r3-next
 
-The Red Robot Radio game (godot version)
+The Red Robot Radio game (standard version)
 
-Humans dissapeared from Earth and machines are looking for a way to bring them back. Humans built a Radio Station at 243 Ida as an attempt to avoid losing their culture. You are a maintenance robot that must keep this radio station in good health while humans from Earth are missing. Travel between Earth and the Asteroid Belt to give supplies to Frank Pi, the radio host that gives the name to its station (and this game).  Includes 13 of the best of Keygen Music Themes
+Humans dissapeared from Earth and machines are looking for a way to bring them back. Before their extinction, humans built a Radio Station at 243 Ida as an attempt to avoid losing their culture. You are a maintenance robot that must keep this radio station in good health while humans from Earth are missing. Travel between Earth and the Asteroid Belt to give supplies to Frank Pi, the radio host whose colour that gives the name to its station (and this game).  Includes 13 of the best of Keygen Music Themes. Dodge space junk, old trashcans, astronauts, even martians (because they hate the Asteroid Belt)
+
+Made with Godot Engine
+
+Remember: Godot Does what Unitydn't (if you are from the 1990 decade you will know where it came from)
