@@ -9,7 +9,6 @@ const savegame = preload("res://save.gd")
 	
 func _ready():
 	loadgame.new()
-	print(Global.level1max)
 	#pass # Replace with function body.
 	#add_child(title)
 

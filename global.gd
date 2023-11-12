@@ -7,13 +7,8 @@ var mousepos
 var timelimit = 15000
 var wait
 var hiscoresfile = "user://hiscores.save"
-var level1max
-var level2max
-var level3max
-var level4max
-var level5max
-var level6max
-var level7max
+var gamelevel
+var levelmax
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

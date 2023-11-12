@@ -8,6 +8,7 @@ var wait
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
 
 func _ready():
+	Global.gamelevel = null
 	add_child(bgsound)
 	var titlemusic = load("res://music/x-force.ogg")
 	bgsound.stream = titlemusic
@@ -32,10 +33,10 @@ func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 		Global.live = 1
-		var level = randi() % 3
-		if level == 0:
+		Global.gamelevel = randi() % 3
+		if Global.gamelevel == 0:
 			get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
-		elif level == 1:
+		elif Global.gamelevel == 1:
 			get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
 		else:
 			get_tree().change_scene_to_file("res://backgounds/abstract.tscn")

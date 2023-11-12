@@ -6,4 +6,12 @@ Humans dissapeared from Earth and machines are looking for a way to bring them b
 
 Made with Godot Engine
 
+# Known issues
+
+* PlayStation 4 controller does not recognize some buttons
+* Sound issues when Steam emulated controller is active
+* Sound issues when playing web version on Firefox
+
+You can play it on your browser at https://patrice.asgardius.company/r3/
+
 Remember: Godot Does what Unitydn't (if you are from the 1990 decade you will know where it came from)
