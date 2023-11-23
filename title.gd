@@ -10,7 +10,7 @@ var wait
 func _ready():
 	Global.gamelevel = null
 	add_child(bgsound)
-	var titlemusic = load("res://music/x-force.ogg")
+	var titlemusic = load("res://music/x-force.wav")
 	bgsound.stream = titlemusic
 	bgsound.play(0)
 	wait = Time.get_ticks_msec()

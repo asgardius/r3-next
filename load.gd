@@ -2,6 +2,7 @@ extends Node
 var file
 func _init():
 	if FileAccess.file_exists(Global.hiscoresfile):
+		Global.firstrun = false
 		file = FileAccess.open(Global.hiscoresfile, FileAccess.READ)
 		Global.levelmax = file.get_as_text().rsplit(",", true, 7)
 	# We need to revert the game state so we're not cloning objects
@@ -15,6 +16,7 @@ func _init():
 	# Load the file line by line and process that dictionary to restore
 	# the object it represents.
 	else:
+		Global.firstrun = true
 		var saveinit = "9999999,9999999,9999999,9999999,9999999,9999999,9999999"
 		var file = FileAccess.open(Global.hiscoresfile, FileAccess.WRITE)
 		file.store_string(saveinit)

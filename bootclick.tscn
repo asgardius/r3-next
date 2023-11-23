@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2b04h3epxb8b"]
+[gd_scene load_steps=4 format=3 uid="uid://de8jrxos3dknb"]
 
 [ext_resource type="Script" path="res://bootclick.gd" id="1_52bti"]
 [ext_resource type="Script" path="res://fps.gd" id="2_gnh1w"]
+[ext_resource type="Script" path="res://Label2.gd" id="3_d45yk"]
 
 [node name="bootclick" type="Control"]
 layout_mode = 3
@@ -26,3 +27,11 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("2_gnh1w")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 94.0
+offset_right = 117.0
+offset_bottom = 117.0
+script = ExtResource("3_d45yk")

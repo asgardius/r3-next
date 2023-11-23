@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://title.gd" id="1_fbo7u"]
 [ext_resource type="Script" path="res://Game name.gd" id="2_bbb0f"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (360p).ogv" id="2_bhkux"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_dxhuu"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_bn1r3"]
 [ext_resource type="Script" path="res://fps.gd" id="3_tsoef"]
 [ext_resource type="Script" path="res://start.gd" id="4_cc41w"]
@@ -24,7 +24,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(2, 1.96)
-stream = ExtResource("2_bhkux")
+stream = ExtResource("2_dxhuu")
 autoplay = true
 script = ExtResource("3_bn1r3")
 

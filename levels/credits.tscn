@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://g8ajwoud48us"]
 
 [ext_resource type="Script" path="res://levels/credits.gd" id="1_y6orl"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (360p).ogv" id="2_efmbx"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_0cref"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_ffw0g"]
 [ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="4_pmxuj"]
 [ext_resource type="Script" path="res://player.gd" id="5_c2k4x"]
@@ -15,7 +15,7 @@ script = ExtResource("1_y6orl")
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(2, 1.96)
-stream = ExtResource("2_efmbx")
+stream = ExtResource("2_0cref")
 autoplay = true
 script = ExtResource("3_ffw0g")
 
@@ -47,6 +47,8 @@ BMX Man
 
 Godot version testing
 
+Deprecated version
+
 Samsung Galaxy J7
 LineageOS 17
 Provided by Monica Trisquel
@@ -63,13 +65,15 @@ Moto G7 Plus
 AOSP 10
 Provided by Goldfish
 
+Still supported
+
 Asus VivoBook X1500EA
 Arch Linux Rolling
 Godot Port started with this device
 Provided as a replacement for a HP 14 laptop that died while running Genshin Impact
 
 Steam Deck
-Arch Linux
+Arch Linux Rolling
 Provided by Store Boss
 
 Feedback

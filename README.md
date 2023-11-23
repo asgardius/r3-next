@@ -9,9 +9,8 @@ Made with Godot Engine
 # Known issues
 
 * PlayStation 4 controller does not recognize some buttons
-* Sound issues when Steam emulated controller is active
-* Sound issues when playing web version on Firefox
+* Sound issues when Steam emulated controller is active (you can emulate mouse and keyboard as a workaround)
 
-You can play it on your browser at https://patrice.asgardius.company/r3/
+This game only offers official releases for GNU/Linux. Don't ask for releases on other platforms (except for BSD).
 
 Remember: Godot Does what Unitydn't (if you are from the 1990 decade you will know where it came from)
