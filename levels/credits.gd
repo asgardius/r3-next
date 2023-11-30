@@ -3,9 +3,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
-var song1 = load("res://music/yes-i-see.ogg")
-var song2 = load("res://music/tekilla.ogg")
-var song3 = load("res://music/sweetest-sin.ogg")
+var song1 = load("res://music/yes-i-see.wav")
+var song2 = load("res://music/tekilla.wav")
+var song3 = load("res://music/sweetest-sin.wav")
 var playstart = false
 var playindex = 0
 

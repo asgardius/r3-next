@@ -70,4 +70,13 @@ scale = Vector2(2.61468, 1.57466)
 text = "Press escape or any shoulder button to exit"
 script = ExtResource("5_scoec")
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 653.0
+offset_right = 76.0
+offset_bottom = 676.0
+text = "v0.0.4 2020-2023 Page Asgardius GNU General Public License 3
+2016-2023 Asgardius Virtualx Project"
+
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
