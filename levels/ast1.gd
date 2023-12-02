@@ -24,6 +24,8 @@ func _process(delta):
 			Global.xm = Input.get_joy_axis(0,JOY_AXIS_LEFT_X)
 			Global.ym = Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 		else:
+			Global.xm = Input.get_last_mouse_velocity().x / 100
+			Global.ym = Input.get_last_mouse_velocity().y / 100
 			if Input.is_action_pressed("ui_left") || Input.is_key_pressed(KEY_A):
 				Global.xm = -1
 			if Input.is_action_pressed("ui_right") || Input.is_key_pressed(KEY_D):
@@ -32,8 +34,6 @@ func _process(delta):
 				Global.ym = -1
 			if Input.is_action_pressed("ui_down") || Input.is_key_pressed(KEY_S):
 				Global.ym = 1
-			Global.xm = Input.get_last_mouse_velocity().x / 100
-			Global.ym = Input.get_last_mouse_velocity().y / 100
 		velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 		ctime = Time.get_ticks_msec()
 	elif !Global.sk && Global.live == null:
