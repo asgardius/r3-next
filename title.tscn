@@ -76,7 +76,7 @@ offset_left = 36.0
 offset_top = 653.0
 offset_right = 76.0
 offset_bottom = 676.0
-text = "R0.0.4-dev 2020-2023 Page Asgardius GNU General Public License 3
+text = "R0.1.0-beta 2020-2023 Page Asgardius GNU General Public License 3
 2016-2023 Asgardius Virtualx Project"
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]

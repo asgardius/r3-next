@@ -32,6 +32,8 @@ func _process(delta):
 				Global.ym = -1
 			if Input.is_action_pressed("ui_down") || Input.is_key_pressed(KEY_S):
 				Global.ym = 1
+			Global.xm = Input.get_last_mouse_velocity().x / 100
+			Global.ym = Input.get_last_mouse_velocity().y / 100
 		velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 		ctime = Time.get_ticks_msec()
 	elif !Global.sk && Global.live == null:

@@ -16,26 +16,11 @@ func _process(delta):
 	var ym = 0
 	var velocity = Vector2.ZERO
 	if Global.live == 1:
-		if Input.get_joy_axis(0,JOY_AXIS_LEFT_X) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_X) < -0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) < -0.2:
-			velocity = (Vector2.RIGHT.rotated(rotation) * -50000 * delta * Input.get_joy_axis(0,JOY_AXIS_LEFT_X))-Vector2.UP.rotated(rotation) * -50000 *delta * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
-		elif Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		#var mousepos = get_viewport().get_mouse_position() - origmpos
-			self.position = Vector2(origpos.x+(Global.mousepos.x*5), origpos.y+(Global.mousepos.y*5))
-		else:
-			if Input.is_action_pressed("ui_left") || Input.is_key_pressed(KEY_A):
-				xm = -1
-			if Input.is_action_pressed("ui_right") || Input.is_key_pressed(KEY_D):
-				xm = 1
-			if Input.is_action_pressed("ui_up") || Input.is_key_pressed(KEY_W):
-				ym = -1
-			if Input.is_action_pressed("ui_down") || Input.is_key_pressed(KEY_S):
-				ym = 1
-			velocity = (Vector2.RIGHT.rotated(rotation) * -50000 * xm * delta)-Vector2.UP.rotated(rotation) * -50000 * ym * delta
-			origpos = self.position
+		velocity = (Vector2.RIGHT.rotated(rotation) * -1000 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -1000 * Global.ym * delta
 		#origmpos = get_viewport().get_mouse_position()
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
-		position += velocity * delta
+		position += velocity
 		if position.x < 782:
 			Global.live = 2
 	#pass
