@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://b82huqhu88xt6"]
+[gd_scene load_steps=21 format=3 uid="uid://b82huqhu88xt6"]
 
 [ext_resource type="Script" path="res://levels/abstract.gd" id="1_id1o1"]
 [ext_resource type="Script" path="res://levels/css1.gd" id="3_4xg6i"]
@@ -17,7 +17,6 @@
 [ext_resource type="Script" path="res://levels/wall3.gd" id="17_pl58r"]
 [ext_resource type="Script" path="res://levels/wall4.gd" id="18_ptooy"]
 [ext_resource type="Script" path="res://fps.gd" id="20_li4sv"]
-[ext_resource type="Script" path="res://backgounds/Home.gd" id="21_ipbod"]
 [ext_resource type="Script" path="res://levels/timelimit.gd" id="21_tw1es"]
 
 [sub_resource type="Gradient" id="Gradient_3wb6i"]
@@ -165,10 +164,3 @@ offset_left = 204.0
 offset_right = 244.0
 offset_bottom = 23.0
 script = ExtResource("21_tw1es")
-
-[node name="Home" type="TextureButton" parent="."]
-offset_left = 52.0
-offset_top = 39.0
-offset_right = 125.0
-offset_bottom = 110.0
-script = ExtResource("21_ipbod")

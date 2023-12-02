@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://mtl88mcwaqk0"]
+[gd_scene load_steps=24 format=3 uid="uid://mtl88mcwaqk0"]
 
 [ext_resource type="Script" path="res://levels/galaxy.gd" id="1_3c4wu"]
 [ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_3g4h6"]
@@ -21,7 +21,6 @@
 [ext_resource type="Script" path="res://levels/wall4.gd" id="18_fasi1"]
 [ext_resource type="Script" path="res://fps.gd" id="20_wbfof"]
 [ext_resource type="Script" path="res://levels/timelimit.gd" id="21_4jblw"]
-[ext_resource type="Script" path="res://backgounds/Home.gd" id="21_c1w3x"]
 
 [sub_resource type="Gradient" id="Gradient_raqpb"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
@@ -186,10 +185,3 @@ offset_left = 204.0
 offset_right = 244.0
 offset_bottom = 23.0
 script = ExtResource("21_4jblw")
-
-[node name="Home" type="TextureButton" parent="."]
-offset_left = 52.0
-offset_top = 39.0
-offset_right = 125.0
-offset_bottom = 110.0
-script = ExtResource("21_c1w3x")
