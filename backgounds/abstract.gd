@@ -2,10 +2,10 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
-var wormhole = load("res://levels/abstract.tscn").instantiate()
+var abstract = load("res://levels/abstract.tscn").instantiate()
 
 func _ready():
-	get_tree().root.add_child.call_deferred(wormhole)
+	get_tree().root.add_child.call_deferred(abstract)
 	Global.wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 
@@ -14,13 +14,9 @@ func _ready():
 func _process(delta):
 	if Time.get_ticks_msec() - Global.wait > Global.timelimit:
 		Global.live = 2
-	if (Time.get_ticks_msec() - Global.wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
+	if (Time.get_ticks_msec() - Global.wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_B)):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
-	elif Input.is_key_pressed(KEY_C):
-		Global.live = 2
-	elif Input.is_key_pressed(KEY_V):
-		Global.live = 3
 	if Global.live == 0:
 		_title()
 	elif Global.live == 2:
@@ -32,7 +28,7 @@ func _process(delta):
 func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-		get_tree().root.remove_child(wormhole)
+		get_tree().root.remove_child(abstract)
 		get_tree().change_scene_to_file("res://title.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
@@ -44,7 +40,7 @@ func _crash():
 		Global.time = Time.get_ticks_msec() - Global.wait
 		await get_tree().create_timer(1.0).timeout
 		queue_free()
-		get_tree().root.remove_child(wormhole)
+		get_tree().root.remove_child(abstract)
 		get_tree().change_scene_to_file("res://backgounds/supernova.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
@@ -54,7 +50,7 @@ func _complete():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 		Global.time = Time.get_ticks_msec() - Global.wait
-		get_tree().root.remove_child(wormhole)
+		get_tree().root.remove_child(abstract)
 		get_tree().change_scene_to_file("res://levels/credits.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)

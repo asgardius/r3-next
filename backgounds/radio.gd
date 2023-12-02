@@ -4,6 +4,7 @@ var crash := AudioStreamPlayer.new()
 var wait
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(crash)
 	var titlemusic = load("res://sfx/complete.ogg")
 	crash.stream = titlemusic
@@ -18,7 +19,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
+	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_key_pressed(KEY_ENTER)):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
 

@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxsjwg1lrwhbb"]
+[gd_scene load_steps=4 format=3 uid="uid://do3hxlilrn3pv"]
 
 [ext_resource type="Script" path="res://bootclick.gd" id="1_52bti"]
 [ext_resource type="Script" path="res://fps.gd" id="2_gnh1w"]
-[ext_resource type="Script" path="res://Label2.gd" id="3_d45yk"]
+[ext_resource type="PackedScene" uid="uid://dblfov80ngodu" path="res://selftest.tscn" id="3_jtnh5"]
 
 [node name="bootclick" type="Control"]
 layout_mode = 3
@@ -13,12 +13,12 @@ script = ExtResource("1_52bti")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 71.0
+offset_left = 105.0
 offset_top = 258.0
 offset_right = 453.0
 offset_bottom = 284.0
 scale = Vector2(2.94857, 7.68)
-text = "Click here or press a gamepad button to continue"
+text = "Press enter or a gamepad button to continue"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -28,10 +28,9 @@ offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("2_gnh1w")
 
-[node name="Label2" type="Label" parent="."]
+[node name="Selftest" parent="." instance=ExtResource("3_jtnh5")]
 layout_mode = 0
-offset_left = 77.0
-offset_top = 94.0
-offset_right = 117.0
-offset_bottom = 117.0
-script = ExtResource("3_d45yk")
+offset_left = 57.0
+offset_top = 112.0
+offset_right = 97.0
+offset_bottom = 135.0

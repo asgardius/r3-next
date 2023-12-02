@@ -14,13 +14,9 @@ func _ready():
 func _process(delta):
 	if Time.get_ticks_msec() - Global.wait > Global.timelimit:
 		Global.live = 2
-	if (Time.get_ticks_msec() - Global.wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
+	if (Time.get_ticks_msec() - Global.wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_B)):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
-	elif Input.is_key_pressed(KEY_C):
-		Global.live = 2
-	elif Input.is_key_pressed(KEY_V):
-		Global.live = 3
 	if Global.live == 0:
 		_title()
 	elif Global.live == 2:

@@ -8,6 +8,9 @@ var wait
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
 
 func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
+		Global.sk = true
 	Global.gamelevel = null
 	add_child(bgsound)
 	var titlemusic = load("res://music/x-force.wav")
@@ -23,10 +26,10 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B)):
+	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_A)):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_level()
-	elif (Time.get_ticks_msec() - wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
+	elif (Time.get_ticks_msec() - wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_B)):
 		get_tree().quit()
 
 func _level():

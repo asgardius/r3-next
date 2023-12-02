@@ -25,12 +25,12 @@ scale = Vector2(6.32794, 4.85128)
 text = "Good Job"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 108.0
+offset_left = 346.0
 offset_top = 361.0
-offset_right = 475.0
+offset_right = 602.0
 offset_bottom = 387.0
 scale = Vector2(2.92998, 7.01768)
-text = "Click here or press any button to return to title"
+text = "Press Enter or A to return to title"
 
 [node name="Label3" type="Label" parent="."]
 offset_left = 158.0
