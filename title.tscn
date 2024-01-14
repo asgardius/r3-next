@@ -4,11 +4,11 @@
 [ext_resource type="Script" path="res://Game name.gd" id="2_bbb0f"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_dxhuu"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_bn1r3"]
-[ext_resource type="Script" path="res://fps.gd" id="3_tsoef"]
 [ext_resource type="Script" path="res://start.gd" id="4_cc41w"]
 [ext_resource type="Script" path="res://exit.gd" id="5_scoec"]
 [ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="8_tne35"]
 [ext_resource type="Script" path="res://player.gd" id="9_7e625"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="9_xo53u"]
 
 [node name="title" type="Control"]
 layout_mode = 3
@@ -33,12 +33,6 @@ position = Vector2(631, 499)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_tne35")
 script = ExtResource("9_7e625")
-
-[node name="fps" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("3_tsoef")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
@@ -72,11 +66,14 @@ script = ExtResource("5_scoec")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 36.0
-offset_top = 653.0
-offset_right = 76.0
-offset_bottom = 676.0
-text = "R0.1.1-dev 2020-2023 Page Asgardius GNU General Public License 3
-2016-2023 Asgardius Virtualx Project"
+offset_left = 378.0
+offset_top = 656.0
+offset_right = 809.0
+offset_bottom = 705.0
+text = "2020-2024 Page Asgardius GNU General Public License 3
+2016-2024 Asgardius Virtualx Project"
+
+[node name="Bottomhud" parent="." instance=ExtResource("9_xo53u")]
+layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]

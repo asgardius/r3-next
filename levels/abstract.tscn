@@ -16,7 +16,7 @@
 [ext_resource type="Script" path="res://levels/wall2.gd" id="16_el0w3"]
 [ext_resource type="Script" path="res://levels/wall3.gd" id="17_pl58r"]
 [ext_resource type="Script" path="res://levels/wall4.gd" id="18_ptooy"]
-[ext_resource type="Script" path="res://fps.gd" id="20_li4sv"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="18_q6ccy"]
 [ext_resource type="Script" path="res://levels/timelimit.gd" id="21_tw1es"]
 
 [sub_resource type="Gradient" id="Gradient_3wb6i"]
@@ -154,13 +154,10 @@ scale = Vector2(15.707, 111)
 texture = SubResource("GradientTexture1D_8jpuy")
 script = ExtResource("18_ptooy")
 
-[node name="fps" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("20_li4sv")
-
 [node name="timelimit" type="Label" parent="."]
 offset_left = 204.0
 offset_right = 244.0
 offset_bottom = 23.0
 script = ExtResource("21_tw1es")
+
+[node name="Bottomhud" parent="." instance=ExtResource("18_q6ccy")]

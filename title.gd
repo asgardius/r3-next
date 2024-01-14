@@ -3,6 +3,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
+var frank := AudioStreamPlayer.new()
 var wait
 #var galaxy = preload("res://backgounds/galaxy.tscn").instantiate()
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
@@ -13,9 +14,13 @@ func _ready():
 		Global.sk = true
 	Global.gamelevel = null
 	add_child(bgsound)
+	add_child(frank)
 	var titlemusic = load("res://music/x-force.wav")
+	var r3jingle = load("res://sfx/title.wav")
 	bgsound.stream = titlemusic
 	bgsound.play(0)
+	frank.stream = r3jingle
+	frank.play(0)
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 

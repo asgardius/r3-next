@@ -36,8 +36,8 @@ func _process(delta):
 				Global.ym = 1
 		velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 		ctime = Time.get_ticks_msec()
-	elif !Global.sk && Global.live == null:
-		_sk()
+	#elif !Global.sk && Global.live == null:
+	#	_sk()
 			
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)

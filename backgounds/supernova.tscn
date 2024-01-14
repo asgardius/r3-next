@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://backgounds/supernova.gd" id="1_3jmy0"]
 [ext_resource type="Script" path="res://backgounds/Label.gd" id="3_24urm"]
 [ext_resource type="Script" path="res://backgounds/Label3.gd" id="3_h0a4u"]
-[ext_resource type="Script" path="res://fps.gd" id="3_tbeol"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="5_knfj0"]
 
 [node name="supernova" type="Node2D"]
 script = ExtResource("1_3jmy0")
@@ -39,7 +39,4 @@ offset_right = 198.0
 offset_bottom = 616.0
 script = ExtResource("3_h0a4u")
 
-[node name="fps" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("3_tbeol")
+[node name="Bottomhud" parent="." instance=ExtResource("5_knfj0")]

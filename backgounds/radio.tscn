@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://backgounds/radio.gd" id="1_hxbaj"]
 [ext_resource type="Texture2D" uid="uid://bows52y4q3suo" path="res://sprites/antenna.png" id="2_26tjs"]
 [ext_resource type="Script" path="res://backgounds/Label3.gd" id="3_765rj"]
-[ext_resource type="Script" path="res://fps.gd" id="4_5mydr"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_51td0"]
 
 [node name="radio" type="Node2D"]
 script = ExtResource("1_hxbaj")
@@ -39,7 +39,4 @@ offset_right = 198.0
 offset_bottom = 616.0
 script = ExtResource("3_765rj")
 
-[node name="fps" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("4_5mydr")
+[node name="Bottomhud" parent="." instance=ExtResource("4_51td0")]
