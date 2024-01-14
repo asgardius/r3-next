@@ -9,7 +9,6 @@ Made with Godot Engine
 # Known issues
 
 * PlayStation 4 controller does not recognize some buttons
-* Sound issues when Steam emulated controller is active (you can emulate mouse and keyboard as a workaround)
 
 This game only offers official releases for GNU/Linux. Don't ask for releases on other platforms (except for BSD).
 
