@@ -19,7 +19,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_key_pressed(KEY_ENTER)):
+	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_key_pressed(KEY_ENTER)):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
 

@@ -51,7 +51,7 @@ offset_top = 92.0
 offset_right = 610.0
 offset_bottom = 118.0
 scale = Vector2(2.61468, 1.57466)
-text = "Press A or Enter start"
+text = "Press B or Enter start"
 script = ExtResource("4_cc41w")
 
 [node name="exit" type="Label" parent="."]
@@ -61,7 +61,7 @@ offset_top = 602.0
 offset_right = 568.0
 offset_bottom = 628.0
 scale = Vector2(2.61468, 1.57466)
-text = "Press escape or B to exit"
+text = "Press escape or A to exit"
 script = ExtResource("5_scoec")
 
 [node name="Label" type="Label" parent="."]

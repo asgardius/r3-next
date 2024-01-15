@@ -30,7 +30,7 @@ offset_top = 361.0
 offset_right = 602.0
 offset_bottom = 387.0
 scale = Vector2(2.92998, 7.01768)
-text = "Press Enter or A to return to title"
+text = "Press Enter or B to return to title"
 
 [node name="Label3" type="Label" parent="."]
 offset_left = 158.0
