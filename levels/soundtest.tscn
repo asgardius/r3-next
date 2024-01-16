@@ -1,0 +1,163 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpn8rshcjn33c"]
+
+[ext_resource type="Script" path="res://levels/soundtest.gd" id="1_3bg6p"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_abtft"]
+[ext_resource type="Script" path="res://nebula.gd" id="3_c33nl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cprm3"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alctd"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0dqsq"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[node name="Soundtest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3bg6p")
+
+[node name="nebula" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 368.0
+scale = Vector2(2, 1.96)
+stream = ExtResource("2_abtft")
+autoplay = true
+script = ExtResource("3_c33nl")
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 3.0
+offset_right = 790.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 40
+text = "Sound Test"
+
+[node name="Stop" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 672.0
+offset_right = 444.0
+offset_bottom = 708.0
+theme_override_font_sizes/font_size = 22
+text = "Press X or Spacebar to stop music playback"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -129.5
+offset_top = -362.0
+offset_right = 129.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Title Screen" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+text = "Title Screen: X-Force Theme"
+
+[node name="Galaxy" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+text = "Galaxy"
+
+[node name="Wormhole" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Wormhole"
+
+[node name="Abstract" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Abstract"
+
+[node name="Galaxy2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Galaxy2"
+
+[node name="Lagoon" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Lagoon"
+
+[node name="Orion" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Orion"
+
+[node name="Space" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Space"
+
+[node name="Stars" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Stars"
+
+[node name="Universe" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Universe"
+
+[node name="Credits 1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Credits 1"
+
+[node name="Credits 2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Credits 2"
+
+[node name="Credits 3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Credits 3"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_0dqsq")
+text = "Back"
+
+[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
+[connection signal="pressed" from="VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
+[connection signal="pressed" from="VBoxContainer/Galaxy" to="." method="_on_galaxy_pressed"]
+[connection signal="pressed" from="VBoxContainer/Wormhole" to="." method="_on_wormhole_pressed"]
+[connection signal="pressed" from="VBoxContainer/Abstract" to="." method="_on_abstract_pressed"]
+[connection signal="pressed" from="VBoxContainer/Galaxy2" to="." method="_on_galaxy_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Lagoon" to="." method="_on_lagoon_pressed"]
+[connection signal="pressed" from="VBoxContainer/Orion" to="." method="_on_orion_pressed"]
+[connection signal="pressed" from="VBoxContainer/Space" to="." method="_on_space_pressed"]
+[connection signal="pressed" from="VBoxContainer/Stars" to="." method="_on_stars_pressed"]
+[connection signal="pressed" from="VBoxContainer/Universe" to="." method="_on_universe_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits 1" to="." method="_on_credits_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits 2" to="." method="_on_credits_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits 3" to="." method="_on_credits_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

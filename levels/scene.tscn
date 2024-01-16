@@ -1,0 +1,133 @@
+[gd_scene load_steps=7 format=3 uid="uid://cntn5tr2w3efj"]
+
+[ext_resource type="Script" path="res://levels/scene.gd" id="1_hxcrn"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_nvftm"]
+[ext_resource type="Script" path="res://nebula.gd" id="3_6sds4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6u0xs"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[node name="Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hxcrn")
+
+[node name="nebula" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 368.0
+scale = Vector2(2, 1.96)
+stream = ExtResource("2_nvftm")
+autoplay = true
+script = ExtResource("3_6sds4")
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 3.0
+offset_right = 790.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 40
+text = "Scene selector"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -129.5
+offset_top = -362.0
+offset_right = 129.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Galaxy" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+text = "Galaxy"
+
+[node name="Wormhole" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Wormhole"
+
+[node name="Abstract" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Abstract"
+
+[node name="Galaxy2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Galaxy2"
+
+[node name="Lagoon" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Lagoon"
+
+[node name="Orion" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Orion"
+
+[node name="Space" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Space"
+
+[node name="Stars" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Stars"
+
+[node name="Universe" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Universe"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Credits"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+text = "Back"
+
+[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
+[connection signal="pressed" from="VBoxContainer/Galaxy" to="." method="_on_galaxy_pressed"]
+[connection signal="pressed" from="VBoxContainer/Wormhole" to="." method="_on_wormhole_pressed"]
+[connection signal="pressed" from="VBoxContainer/Abstract" to="." method="_on_abstract_pressed"]
+[connection signal="pressed" from="VBoxContainer/Galaxy2" to="." method="_on_galaxy_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Lagoon" to="." method="_on_lagoon_pressed"]
+[connection signal="pressed" from="VBoxContainer/Orion" to="." method="_on_orion_pressed"]
+[connection signal="pressed" from="VBoxContainer/Space" to="." method="_on_space_pressed"]
+[connection signal="pressed" from="VBoxContainer/Stars" to="." method="_on_stars_pressed"]
+[connection signal="pressed" from="VBoxContainer/Universe" to="." method="_on_universe_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]
