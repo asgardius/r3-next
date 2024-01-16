@@ -14,10 +14,7 @@ func _ready():
 func _process(delta):
 	if Time.get_ticks_msec() - Global.wait > Global.timelimit:
 		Global.live = 2
-	if Global.live == 1 && (Time.get_ticks_msec() - Global.wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_A)):
-		#print("Mouse Click/Unclick at: ", event.position)
-		_title()
-	if Global.live == 0:
+	if Global.live == 0 || Input.is_action_just_pressed("ui_cancel"):
 		_title()
 	elif Global.live == 2:
 		_crash()
@@ -28,11 +25,15 @@ func _process(delta):
 func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-		get_tree().root.remove_child(abstract)
+	get_tree().root.remove_child(abstract)
+	if Global.debug:
+		get_tree().change_scene_to_file("res://levels/scene.tscn")
+	else:
 		get_tree().change_scene_to_file("res://title.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
+
 
 func _crash():
 	# This is like autoloading the scene, only

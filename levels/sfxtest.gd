@@ -1,7 +1,11 @@
 extends Control
+
+var player := AudioStreamPlayer.new()
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	$"VBoxContainer/Music".grab_focus()
+	add_child(player)
+	$"VBoxContainer/Frank".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -12,6 +16,8 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()
+	if Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_X):
+		player.stop()
 		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
 #			_on_debug_pressed()
@@ -28,13 +34,19 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
+	get_tree().change_scene_to_file("res://levels/soundtest.tscn")
 
 
+func _on_frank_pressed():
+	player.stream = load(Global.sfxtracks[0])
+	player.play(0)
 
-func _on_music_pressed():
-	get_tree().change_scene_to_file("res://levels/musictest.tscn")
+
+func _on_crash_pressed():
+	player.stream = load(Global.sfxtracks[1])
+	player.play(0)
 
 
-func _on_sfx_pressed():
-	get_tree().change_scene_to_file("res://levels/sfxtest.tscn")
+func _on_complete_pressed():
+	player.stream = load(Global.sfxtracks[2])
+	player.play(0)

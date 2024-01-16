@@ -3,9 +3,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
-var song1 = load("res://music/yes-i-see.wav")
-var song2 = load("res://music/tekilla.wav")
-var song3 = load("res://music/sweetest-sin.wav")
+var song1 = load(Global.musictracks[10])
+var song2 = load(Global.musictracks[11])
+var song3 = load(Global.musictracks[12])
 var playstart = false
 var playindex = 0
 
@@ -51,6 +51,6 @@ func _complete():
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if bgsound.get_playback_position() > 1 && event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_key_pressed(KEY_ENTER):
+	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_complete()
