@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://chdsigcjqqsoe"
-path="res://.godot/imported/orion.wav-830743a5cd9d83c39bca0bd8a69bb580.sample"
+type="AudioStreamSample"
+path="res://.import/orion.wav-830743a5cd9d83c39bca0bd8a69bb580.sample"
 
 [deps]
 
 source_file="res://music/orion.wav"
-dest_files=["res://.godot/imported/orion.wav-830743a5cd9d83c39bca0bd8a69bb580.sample"]
+dest_files=[ "res://.import/orion.wav-830743a5cd9d83c39bca0bd8a69bb580.sample" ]
 
 [params]
 

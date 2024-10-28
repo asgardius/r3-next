@@ -1,19 +1,15 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://b6gfnaiy8x3v"
-path="res://.godot/imported/crash.ogg-11a52fe708fb30358e38fc41556fd0d4.oggvorbisstr"
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/crash.ogg-11a52fe708fb30358e38fc41556fd0d4.oggstr"
 
 [deps]
 
 source_file="res://sfx/crash.ogg"
-dest_files=["res://.godot/imported/crash.ogg-11a52fe708fb30358e38fc41556fd0d4.oggvorbisstr"]
+dest_files=[ "res://.import/crash.ogg-11a52fe708fb30358e38fc41556fd0d4.oggstr" ]
 
 [params]
 
 loop=false
 loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4

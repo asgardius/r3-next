@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://d3wf8pk1qqwot"
-path="res://.godot/imported/yes-i-see.wav-31e9ccf9a202515f358fba3cf93c2d81.sample"
+type="AudioStreamSample"
+path="res://.import/yes-i-see.wav-31e9ccf9a202515f358fba3cf93c2d81.sample"
 
 [deps]
 
 source_file="res://music/yes-i-see.wav"
-dest_files=["res://.godot/imported/yes-i-see.wav-31e9ccf9a202515f358fba3cf93c2d81.sample"]
+dest_files=[ "res://.import/yes-i-see.wav-31e9ccf9a202515f358fba3cf93c2d81.sample" ]
 
 [params]
 

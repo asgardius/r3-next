@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://7sad3jcv5dw3"
-path="res://.godot/imported/eternity.wav-78371c4fede32516fab135a00d8b1197.sample"
+type="AudioStreamSample"
+path="res://.import/eternity.wav-78371c4fede32516fab135a00d8b1197.sample"
 
 [deps]
 
 source_file="res://music/eternity.wav"
-dest_files=["res://.godot/imported/eternity.wav-78371c4fede32516fab135a00d8b1197.sample"]
+dest_files=[ "res://.import/eternity.wav-78371c4fede32516fab135a00d8b1197.sample" ]
 
 [params]
 

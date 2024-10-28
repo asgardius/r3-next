@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://csxaw70v4ksds"
-path="res://.godot/imported/tekilla.wav-f7a8ab6752ff0d2dc125b980e5d5d6bb.sample"
+type="AudioStreamSample"
+path="res://.import/tekilla.wav-f7a8ab6752ff0d2dc125b980e5d5d6bb.sample"
 
 [deps]
 
 source_file="res://music/tekilla.wav"
-dest_files=["res://.godot/imported/tekilla.wav-f7a8ab6752ff0d2dc125b980e5d5d6bb.sample"]
+dest_files=[ "res://.import/tekilla.wav-f7a8ab6752ff0d2dc125b980e5d5d6bb.sample" ]
 
 [params]
 

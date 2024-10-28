@@ -9,9 +9,9 @@ var wait
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
-		Global.sk = true
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
+	#	Global.sk = true
 	Global.gamelevel = null
 	add_child(bgsound)
 	add_child(frank)
@@ -31,11 +31,12 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if Input.is_action_just_pressed("ui_accept"):
+	#if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
-		get_tree().change_scene_to_file("res://levels/tmenu.tscn")
+	#	get_tree().change_scene_to_file("res://levels/tmenu.tscn")
 		#_level()
-	elif Input.is_action_just_pressed("ui_cancel"):
+	#elif Input.is_action_just_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 
 func _level():
@@ -44,11 +45,11 @@ func _level():
 		Global.live = 1
 		Global.gamelevel = randi() % 3
 		if Global.gamelevel == 0:
-			get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
+			get_tree().change_scene("res://backgounds/galaxy.tscn")
 		elif Global.gamelevel == 1:
-			get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+			get_tree().change_scene("res://backgounds/wormhole.tscn")
 		else:
-			get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
+			get_tree().change_scene("res://backgounds/abstract.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

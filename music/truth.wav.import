@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://dkyu51gkmrmrl"
-path="res://.godot/imported/truth.wav-2d7a70053b9de8eed2f2707e82d6d709.sample"
+type="AudioStreamSample"
+path="res://.import/truth.wav-2d7a70053b9de8eed2f2707e82d6d709.sample"
 
 [deps]
 
 source_file="res://music/truth.wav"
-dest_files=["res://.godot/imported/truth.wav-2d7a70053b9de8eed2f2707e82d6d709.sample"]
+dest_files=[ "res://.import/truth.wav-2d7a70053b9de8eed2f2707e82d6d709.sample" ]
 
 [params]
 

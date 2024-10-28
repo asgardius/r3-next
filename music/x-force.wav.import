@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://cbtp4t74o2im"
-path="res://.godot/imported/x-force.wav-d6207f01f4c5fbb8ab4f6b0684fc6d51.sample"
+type="AudioStreamSample"
+path="res://.import/x-force.wav-d6207f01f4c5fbb8ab4f6b0684fc6d51.sample"
 
 [deps]
 
 source_file="res://music/x-force.wav"
-dest_files=["res://.godot/imported/x-force.wav-d6207f01f4c5fbb8ab4f6b0684fc6d51.sample"]
+dest_files=[ "res://.import/x-force.wav-d6207f01f4c5fbb8ab4f6b0684fc6d51.sample" ]
 
 [params]
 

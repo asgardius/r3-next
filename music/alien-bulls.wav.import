@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://icyxbi4rnu4c"
-path="res://.godot/imported/alien-bulls.wav-27f490a7169aff761fa58c12e113520f.sample"
+type="AudioStreamSample"
+path="res://.import/alien-bulls.wav-27f490a7169aff761fa58c12e113520f.sample"
 
 [deps]
 
 source_file="res://music/alien-bulls.wav"
-dest_files=["res://.godot/imported/alien-bulls.wav-27f490a7169aff761fa58c12e113520f.sample"]
+dest_files=[ "res://.import/alien-bulls.wav-27f490a7169aff761fa58c12e113520f.sample" ]
 
 [params]
 

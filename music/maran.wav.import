@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://dhprxrtcbw7fo"
-path="res://.godot/imported/maran.wav-f360fc74f16659b57ef865dcd8adc07d.sample"
+type="AudioStreamSample"
+path="res://.import/maran.wav-f360fc74f16659b57ef865dcd8adc07d.sample"
 
 [deps]
 
 source_file="res://music/maran.wav"
-dest_files=["res://.godot/imported/maran.wav-f360fc74f16659b57ef865dcd8adc07d.sample"]
+dest_files=[ "res://.import/maran.wav-f360fc74f16659b57ef865dcd8adc07d.sample" ]
 
 [params]
 

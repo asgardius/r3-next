@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://daneha07ex3rr"
-path="res://.godot/imported/rock.wav-e3359062c3afe81a0bdd88a06dc6cd71.sample"
+type="AudioStreamSample"
+path="res://.import/rock.wav-e3359062c3afe81a0bdd88a06dc6cd71.sample"
 
 [deps]
 
 source_file="res://music/rock.wav"
-dest_files=["res://.godot/imported/rock.wav-e3359062c3afe81a0bdd88a06dc6cd71.sample"]
+dest_files=[ "res://.import/rock.wav-e3359062c3afe81a0bdd88a06dc6cd71.sample" ]
 
 [params]
 
