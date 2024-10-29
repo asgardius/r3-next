@@ -22,8 +22,9 @@ func _process(delta):
 	var bgtime = bgsound.get_playback_position() + AudioServer.get_time_since_last_mix()
 	# Compensate for output latency.
 	bgtime -= AudioServer.get_output_latency()
+	print(bgtime)
 	#print("Time is: ", bgtime)
-	if bgtime < 0:
+	if (playindex == 0 && bgtime > 171) || (playindex == 1 && bgtime > 126) || (playindex == 2 && bgtime > 354):
 		if playstart:
 			if playindex == 0:
 				playindex = 1
@@ -44,7 +45,7 @@ func _process(delta):
 func _complete():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-		get_tree().change_scene_to_file("res://backgounds/radio.tscn")
+		get_tree().change_scene("res://backgounds/radio.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

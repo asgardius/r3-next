@@ -1,12 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnstwjy5mqdyo"]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource type="Texture2D" uid="uid://bona2ytn3y3a5" path="res://backgounds/galaxy.png" id="1_bmyxf"]
-[ext_resource type="Script" path="res://backgounds/galaxy.gd" id="1_h1j80"]
+[ext_resource path="res://backgounds/galaxy.png" type="Texture" id=1]
 
 [node name="galaxy" type="Node2D"]
-script = ExtResource("1_h1j80")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("1_bmyxf")
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 1.33, 1.33 )
+texture = ExtResource( 1 )

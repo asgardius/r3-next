@@ -1,42 +1,37 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4oc3wj8vu5p0"]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource type="Script" path="res://backgounds/radio.gd" id="1_hxbaj"]
-[ext_resource type="Texture2D" uid="uid://bows52y4q3suo" path="res://sprites/antenna.png" id="2_26tjs"]
-[ext_resource type="Script" path="res://backgounds/Label3.gd" id="3_765rj"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_51td0"]
+[ext_resource path="res://sprites/antenna.png" type="Texture" id=1]
+[ext_resource path="res://fonts/title.tres" type="DynamicFont" id=2]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
 
 [node name="radio" type="Node2D"]
-script = ExtResource("1_hxbaj")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 438.0
-offset_top = 14.0
-offset_right = 864.0
-offset_bottom = 751.0
-scale = Vector2(1, 0.92)
-texture = ExtResource("2_26tjs")
+margin_left = 438.0
+margin_top = 14.0
+margin_right = 864.0
+margin_bottom = 751.0
+rect_scale = Vector2( 0.92, 0.92 )
+texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-offset_left = 461.0
-offset_top = 29.0
-offset_right = 531.0
-offset_bottom = 55.0
-scale = Vector2(6.32794, 4.85128)
+margin_left = 400.0
+margin_top = 20.0
+margin_right = 855.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 2 )
 text = "Good Job"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 346.0
-offset_top = 361.0
-offset_right = 602.0
-offset_bottom = 387.0
-scale = Vector2(2.92998, 7.01768)
+margin_top = 400.0
+margin_right = 1280.0
+margin_bottom = 546.0
+custom_fonts/font = ExtResource( 3 )
 text = "Press Enter or B to return to title"
+align = 1
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 158.0
-offset_top = 593.0
-offset_right = 198.0
-offset_bottom = 616.0
-script = ExtResource("3_765rj")
-
-[node name="Bottomhud" parent="." instance=ExtResource("4_51td0")]
+margin_left = 158.0
+margin_top = 593.0
+margin_right = 198.0
+margin_bottom = 607.0
