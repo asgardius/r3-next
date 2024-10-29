@@ -8,8 +8,6 @@ Humans dissapeared from Earth and machines are looking for a way to bring them b
 
 Made with Virtualx Game Engine (forked from Godot 3.6)
 
-# Known issues
-
 This game only offers official releases for GNU/Linux. Don't ask for releases on other platforms (except for BSD).
 
 Download links https://elda.asgardius.company/r3-game-dl/
