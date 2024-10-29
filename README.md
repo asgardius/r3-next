@@ -12,6 +12,10 @@ Made with Godot Engine 4.X and eventually will be ported to Virtualx Game Engine
 
 This game only offers official releases for GNU/Linux. Don't ask for releases on other platforms (except for BSD).
 
+Download links https://elda.asgardius.company/r3-game-dl/
+
+Bittorrent downloads https://elda.asgardius.company/r3-game-torrent/
+
 Remember: Godot Does what Unitydn't (if you are from the 1990 decade you will know where it came from)
 
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
