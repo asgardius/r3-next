@@ -1,6 +1,6 @@
 extends Control
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$VBoxContainer/Start.grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -13,11 +13,11 @@ func _level():
 		Global.live = 1
 		Global.gamelevel = randi() % 3
 		if Global.gamelevel == 0:
-			get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
+			get_tree().change_scene("res://backgounds/galaxy.tscn")
 		elif Global.gamelevel == 1:
-			get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+			get_tree().change_scene("res://backgounds/wormhole.tscn")
 		else:
-			get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
+			get_tree().change_scene("res://backgounds/abstract.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
@@ -42,7 +42,7 @@ func _on_start_pressed():
 
 
 func _on_debug_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
+	get_tree().change_scene("res://levels/debug.tscn")
 
 
 func _on_exit_pressed():

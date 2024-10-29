@@ -10,7 +10,7 @@ var playstart = false
 var playindex = 0
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(bgsound)
 	bgsound.stream = song1
 	bgsound.play(0)
@@ -22,7 +22,6 @@ func _process(delta):
 	var bgtime = bgsound.get_playback_position() + AudioServer.get_time_since_last_mix()
 	# Compensate for output latency.
 	bgtime -= AudioServer.get_output_latency()
-	print(bgtime)
 	#print("Time is: ", bgtime)
 	if (playindex == 0 && bgtime > 171) || (playindex == 1 && bgtime > 126) || (playindex == 2 && bgtime > 354):
 		if playstart:
@@ -52,6 +51,6 @@ func _complete():
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_complete()

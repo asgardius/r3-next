@@ -1,184 +1,187 @@
-[gd_scene load_steps=24 format=3 uid="uid://mtl88mcwaqk0"]
+[gd_scene load_steps=25 format=2]
 
-[ext_resource type="Script" path="res://levels/galaxy.gd" id="1_3c4wu"]
-[ext_resource type="Texture2D" uid="uid://8lioamk650y7" path="res://sprites/css.png" id="2_3g4h6"]
-[ext_resource type="Script" path="res://levels/css1.gd" id="3_1tarv"]
-[ext_resource type="Texture2D" uid="uid://uscirt5qj0me" path="res://sprites/sat.png" id="4_as4jm"]
-[ext_resource type="Texture2D" uid="uid://dlqjt7dmqfn4m" path="res://sprites/iss.png" id="5_6ivog"]
-[ext_resource type="Texture2D" uid="uid://b8gbi6lsddd0g" path="res://sprites/tc.png" id="6_vp2ej"]
-[ext_resource type="Texture2D" uid="uid://dqukmd8obdfhi" path="res://sprites/bus.png" id="7_5wmcj"]
-[ext_resource type="Texture2D" uid="uid://bows52y4q3suo" path="res://sprites/antenna.png" id="8_rmhxj"]
-[ext_resource type="Script" path="res://levels/antenna.gd" id="9_diat7"]
-[ext_resource type="Texture2D" uid="uid://cpd31c6o18rmh" path="res://sprites/ss.png" id="9_favs7"]
-[ext_resource type="Texture2D" uid="uid://dq06yjgibl0u1" path="res://sprites/asteroid.png" id="11_omn33"]
-[ext_resource type="Script" path="res://levels/ast1.gd" id="12_g6l6s"]
-[ext_resource type="Script" path="res://levels/ast2.gd" id="13_s46s0"]
-[ext_resource type="Script" path="res://levels/ast3.gd" id="14_cu7w4"]
-[ext_resource type="Script" path="res://levels/wall1.gd" id="15_jbm4l"]
-[ext_resource type="Script" path="res://levels/ss.gd" id="15_n6ui8"]
-[ext_resource type="Script" path="res://levels/wall2.gd" id="16_dnhp8"]
-[ext_resource type="Script" path="res://levels/wall3.gd" id="17_jrw7x"]
-[ext_resource type="Script" path="res://levels/wall4.gd" id="18_fasi1"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="21_0dqfd"]
-[ext_resource type="Script" path="res://levels/timelimit.gd" id="21_4jblw"]
+[ext_resource path="res://sprites/asteroid.png" type="Texture" id=1]
+[ext_resource path="res://sprites/sat.png" type="Texture" id=2]
+[ext_resource path="res://sprites/css.png" type="Texture" id=3]
+[ext_resource path="res://fonts/about.tres" type="DynamicFont" id=4]
+[ext_resource path="res://sprites/antenna.png" type="Texture" id=5]
+[ext_resource path="res://sprites/iss.png" type="Texture" id=6]
+[ext_resource path="res://sprites/tc.png" type="Texture" id=7]
+[ext_resource path="res://sprites/bus.png" type="Texture" id=8]
+[ext_resource path="res://levels/antenna.gd" type="Script" id=9]
+[ext_resource path="res://levels/ast2.gd" type="Script" id=10]
+[ext_resource path="res://levels/ast1.gd" type="Script" id=11]
+[ext_resource path="res://levels/ast3.gd" type="Script" id=12]
+[ext_resource path="res://sprites/ss.png" type="Texture" id=13]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=14]
+[ext_resource path="res://levels/timelimit.gd" type="Script" id=15]
+[ext_resource path="res://levels/wall3.gd" type="Script" id=16]
+[ext_resource path="res://levels/ss.gd" type="Script" id=17]
+[ext_resource path="res://levels/wall2.gd" type="Script" id=18]
+[ext_resource path="res://levels/wall1.gd" type="Script" id=19]
+[ext_resource path="res://levels/css1.gd" type="Script" id=20]
+[ext_resource path="res://levels/wall4.gd" type="Script" id=21]
+[ext_resource path="res://levels/galaxy.gd" type="Script" id=22]
 
-[sub_resource type="Gradient" id="Gradient_raqpb"]
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.0070922, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_4c28c"]
-gradient = SubResource("Gradient_raqpb")
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
 
 [node name="galaxy" type="Node2D"]
-script = ExtResource("1_3c4wu")
+script = ExtResource( 22 )
 
-[node name="ast1" type="Sprite2D" parent="."]
-position = Vector2(934, 569)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("11_omn33")
-script = ExtResource("12_g6l6s")
+[node name="ast1" type="Sprite" parent="."]
+position = Vector2( 934, 569 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+script = ExtResource( 11 )
 
-[node name="ast2" type="Sprite2D" parent="."]
-position = Vector2(555, 705)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("11_omn33")
-script = ExtResource("13_s46s0")
+[node name="ast2" type="Sprite" parent="."]
+position = Vector2( 555, 705 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+script = ExtResource( 10 )
 
-[node name="ast3" type="Sprite2D" parent="."]
-position = Vector2(1257, 644)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("11_omn33")
-script = ExtResource("14_cu7w4")
+[node name="ast3" type="Sprite" parent="."]
+position = Vector2( 1257, 644 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+script = ExtResource( 12 )
 
-[node name="css1" type="Sprite2D" parent="."]
-position = Vector2(852, 455)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_3g4h6")
-script = ExtResource("3_1tarv")
+[node name="css1" type="Sprite" parent="."]
+position = Vector2( 852, 455 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+script = ExtResource( 20 )
 
-[node name="css2" type="Sprite2D" parent="."]
-position = Vector2(908, 688)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_3g4h6")
-script = ExtResource("3_1tarv")
+[node name="css2" type="Sprite" parent="."]
+position = Vector2( 908, 688 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+script = ExtResource( 20 )
 
-[node name="css3" type="Sprite2D" parent="."]
-position = Vector2(2745, 708)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_3g4h6")
-script = ExtResource("3_1tarv")
+[node name="css3" type="Sprite" parent="."]
+position = Vector2( 2745, 708 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+script = ExtResource( 20 )
 
-[node name="sat1" type="Sprite2D" parent="."]
-position = Vector2(858, -50)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("4_as4jm")
-script = ExtResource("3_1tarv")
+[node name="sat1" type="Sprite" parent="."]
+position = Vector2( 858, -50 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+script = ExtResource( 20 )
 
-[node name="sat2" type="Sprite2D" parent="."]
-position = Vector2(1389, -115)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("4_as4jm")
-script = ExtResource("3_1tarv")
+[node name="sat2" type="Sprite" parent="."]
+position = Vector2( 1389, -115 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+script = ExtResource( 20 )
 
-[node name="sat3" type="Sprite2D" parent="."]
-position = Vector2(2726, -53)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("4_as4jm")
-script = ExtResource("3_1tarv")
+[node name="sat3" type="Sprite" parent="."]
+position = Vector2( 2726, -53 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+script = ExtResource( 20 )
 
-[node name="iss1" type="Sprite2D" parent="."]
-position = Vector2(1517, 236)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_6ivog")
-script = ExtResource("3_1tarv")
+[node name="iss1" type="Sprite" parent="."]
+position = Vector2( 1517, 236 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+script = ExtResource( 20 )
 
-[node name="iss2" type="Sprite2D" parent="."]
-position = Vector2(2021, -24)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_6ivog")
-script = ExtResource("3_1tarv")
+[node name="iss2" type="Sprite" parent="."]
+position = Vector2( 2021, -24 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+script = ExtResource( 20 )
 
-[node name="iss3" type="Sprite2D" parent="."]
-position = Vector2(2747, 261)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_6ivog")
-script = ExtResource("3_1tarv")
+[node name="iss3" type="Sprite" parent="."]
+position = Vector2( 2747, 261 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+script = ExtResource( 20 )
 
-[node name="tc1" type="Sprite2D" parent="."]
-position = Vector2(1633, 928)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("6_vp2ej")
-script = ExtResource("3_1tarv")
+[node name="tc1" type="Sprite" parent="."]
+position = Vector2( 1633, 928 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+script = ExtResource( 20 )
 
-[node name="tc2" type="Sprite2D" parent="."]
-position = Vector2(2273, 1084)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("6_vp2ej")
-script = ExtResource("3_1tarv")
+[node name="tc2" type="Sprite" parent="."]
+position = Vector2( 2273, 1084 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+script = ExtResource( 20 )
 
-[node name="tc3" type="Sprite2D" parent="."]
-position = Vector2(3012, 1118)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("6_vp2ej")
-script = ExtResource("3_1tarv")
+[node name="tc3" type="Sprite" parent="."]
+position = Vector2( 3012, 1118 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+script = ExtResource( 20 )
 
-[node name="bus1" type="Sprite2D" parent="."]
-position = Vector2(966, 1066)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("7_5wmcj")
-script = ExtResource("3_1tarv")
+[node name="bus1" type="Sprite" parent="."]
+position = Vector2( 966, 1066 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+script = ExtResource( 20 )
 
-[node name="bus2" type="Sprite2D" parent="."]
-position = Vector2(2266, 621)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("7_5wmcj")
-script = ExtResource("3_1tarv")
+[node name="bus2" type="Sprite" parent="."]
+position = Vector2( 2266, 621 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+script = ExtResource( 20 )
 
-[node name="bus3" type="Sprite2D" parent="."]
-position = Vector2(3139, 268)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("7_5wmcj")
-script = ExtResource("3_1tarv")
+[node name="bus3" type="Sprite" parent="."]
+position = Vector2( 3139, 268 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+script = ExtResource( 20 )
 
-[node name="antenna" type="Sprite2D" parent="."]
-position = Vector2(3031, -11)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("8_rmhxj")
-script = ExtResource("9_diat7")
+[node name="antenna" type="Sprite" parent="."]
+position = Vector2( 3031, -11 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+script = ExtResource( 9 )
 
-[node name="ss" type="Sprite2D" parent="."]
-position = Vector2(640, 360)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("9_favs7")
-script = ExtResource("15_n6ui8")
+[node name="ss" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 13 )
+script = ExtResource( 17 )
 
-[node name="wall1" type="Sprite2D" parent="."]
-position = Vector2(357.5, 483.5)
-scale = Vector2(0.332031, 2539)
-texture = SubResource("GradientTexture1D_4c28c")
-script = ExtResource("15_jbm4l")
+[node name="wall1" type="Sprite" parent="."]
+position = Vector2( 357.5, 545.5 )
+scale = Vector2( 0.0168418, 1631 )
+texture = SubResource( 2 )
+script = ExtResource( 19 )
 
-[node name="wall2" type="Sprite2D" parent="."]
-position = Vector2(3618, 471)
-scale = Vector2(0.332031, 2534.5)
-texture = SubResource("GradientTexture1D_4c28c")
-script = ExtResource("16_dnhp8")
+[node name="wall2" type="Sprite" parent="."]
+position = Vector2( 3618, 546.5 )
+scale = Vector2( 0.0168418, 1633 )
+texture = SubResource( 2 )
+script = ExtResource( 18 )
 
-[node name="wall3" type="Sprite2D" parent="."]
-position = Vector2(2326, -282)
-scale = Vector2(15.707, 111)
-texture = SubResource("GradientTexture1D_4c28c")
-script = ExtResource("17_jrw7x")
+[node name="wall3" type="Sprite" parent="."]
+position = Vector2( 1975.5, -282 )
+scale = Vector2( 1.60498, 28.5 )
+texture = SubResource( 2 )
+script = ExtResource( 16 )
 
-[node name="wall4" type="Sprite2D" parent="."]
-position = Vector2(2320, 1345)
-scale = Vector2(15.707, 111)
-texture = SubResource("GradientTexture1D_4c28c")
-script = ExtResource("18_fasi1")
+[node name="wall4" type="Sprite" parent="."]
+position = Vector2( 1974.5, 1345 )
+scale = Vector2( 1.604, 28.5 )
+texture = SubResource( 2 )
+script = ExtResource( 21 )
 
 [node name="timelimit" type="Label" parent="."]
-offset_left = 204.0
-offset_right = 244.0
-offset_bottom = 23.0
-script = ExtResource("21_4jblw")
+margin_left = 204.0
+margin_right = 244.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 4 )
+script = ExtResource( 15 )
 
-[node name="Bottomhud" parent="." instance=ExtResource("21_0dqfd")]
+[node name="Bottomhud" parent="." instance=ExtResource( 14 )]

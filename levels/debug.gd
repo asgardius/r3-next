@@ -1,6 +1,6 @@
 extends Control
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Global.debug = true
 	$"VBoxContainer/Gamepad Test".grab_focus()
 
@@ -27,17 +27,17 @@ func _input(event):
 
 
 func _on_scene_selector_pressed():
-	get_tree().change_scene_to_file("res://levels/scene.tscn")
+	get_tree().change_scene("res://levels/scene.tscn")
 
 
 func _on_sound_test_pressed():
-	get_tree().change_scene_to_file("res://levels/soundtest.tscn")
+	get_tree().change_scene("res://levels/soundtest.tscn")
 
 
 func _on_back_pressed():
 	Global.debug = false
-	get_tree().change_scene_to_file("res://levels/tmenu.tscn")
+	get_tree().change_scene("res://levels/tmenu.tscn")
 
 
 func _on_gamepad_test_pressed():
-	get_tree().change_scene_to_file("res://levels/gamepadtest.tscn")
+	get_tree().change_scene("res://levels/gamepadtest.tscn")

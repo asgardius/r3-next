@@ -1,156 +1,169 @@
-[gd_scene load_steps=8 format=3 uid="uid://c6qj5i5eynv34"]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource type="Script" path="res://levels/musictest.gd" id="1_12esl"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_ba3gi"]
-[ext_resource type="Script" path="res://nebula.gd" id="3_f30oj"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_r7nr0"]
+[ext_resource path="res://fonts/about.tres" type="DynamicFont" id=1]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
+[ext_resource path="res://backgounds/nebula_-_6044 (720p).ogv" type="VideoStream" id=4]
+[ext_resource path="res://levels/musictest.gd" type="Script" id=5]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cprm3"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0.8, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alctd"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0.8, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0dqsq"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0.8, 0, 1 )
 
 [node name="Musictest" type="Control"]
-layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_12esl")
+script = ExtResource( 5 )
 
-[node name="nebula" type="VideoStreamPlayer" parent="."]
-layout_mode = 0
-offset_right = 640.0
-offset_bottom = 368.0
-scale = Vector2(2, 1.96)
-stream = ExtResource("2_ba3gi")
+[node name="nebula" type="VideoPlayer" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+stream = ExtResource( 4 )
 autoplay = true
-script = ExtResource("3_f30oj")
+loop = true
 
 [node name="Game name" type="Label" parent="."]
-layout_mode = 0
-offset_left = 496.0
-offset_top = 3.0
-offset_right = 790.0
-offset_bottom = 73.0
-theme_override_font_sizes/font_size = 40
+margin_left = 415.0
+margin_top = 3.0
+margin_right = 804.0
+margin_bottom = 73.0
+custom_fonts/font = ExtResource( 3 )
 text = "Music Test"
+align = 1
+valign = 1
 
 [node name="Stop" type="Label" parent="."]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 672.0
-offset_right = 444.0
-offset_bottom = 708.0
-theme_override_font_sizes/font_size = 22
+margin_left = 5.0
+margin_top = 672.0
+margin_right = 230.0
+margin_bottom = 700.0
+custom_fonts/font = ExtResource( 1 )
 text = "Press X to stop playback"
 
+[node name="Bottomhud" parent="." instance=ExtResource( 2 )]
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -129.5
-offset_top = -362.0
-offset_right = 129.5
-grow_horizontal = 2
-grow_vertical = 0
+margin_left = 510.5
+margin_top = 97.0
+margin_right = 769.5
+margin_bottom = 808.0
 
 [node name="Title Screen" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+margin_right = 267.0
+margin_bottom = 34.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 1 )
 text = "Title Screen: X-Force Theme"
 
 [node name="Galaxy" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+margin_top = 38.0
+margin_right = 267.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 1 )
 text = "Galaxy"
 
 [node name="Wormhole" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 76.0
+margin_right = 267.0
+margin_bottom = 110.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 2 )
 text = "Wormhole"
 
 [node name="Abstract" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 114.0
+margin_right = 267.0
+margin_bottom = 148.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Abstract"
 
 [node name="Galaxy2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 152.0
+margin_right = 267.0
+margin_bottom = 186.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Galaxy2"
 
 [node name="Lagoon" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 190.0
+margin_right = 267.0
+margin_bottom = 224.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Lagoon"
 
 [node name="Orion" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 228.0
+margin_right = 267.0
+margin_bottom = 262.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Orion"
 
 [node name="Space" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 266.0
+margin_right = 267.0
+margin_bottom = 300.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Space"
 
 [node name="Stars" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 304.0
+margin_right = 267.0
+margin_bottom = 338.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Stars"
 
 [node name="Universe" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 342.0
+margin_right = 267.0
+margin_bottom = 376.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Universe"
 
 [node name="Credits 1" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 380.0
+margin_right = 267.0
+margin_bottom = 414.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Credits 1"
 
 [node name="Credits 2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 418.0
+margin_right = 267.0
+margin_bottom = 452.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Credits 2"
 
 [node name="Credits 3" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 456.0
+margin_right = 267.0
+margin_bottom = 490.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Credits 3"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_0dqsq")
+margin_top = 494.0
+margin_right = 267.0
+margin_bottom = 528.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "Back"
 
-[node name="Bottomhud" parent="." instance=ExtResource("4_r7nr0")]
-layout_mode = 1
-
-[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
 [connection signal="pressed" from="VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
 [connection signal="pressed" from="VBoxContainer/Galaxy" to="." method="_on_galaxy_pressed"]
 [connection signal="pressed" from="VBoxContainer/Wormhole" to="." method="_on_wormhole_pressed"]

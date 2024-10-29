@@ -39,5 +39,5 @@ func _sk():
 	set_text("Script Kiddie detected, only true hackers can cheat here");
 
 func _input(event):
-	if Global.sk && (Input.is_mouse_button_pressed(BUTTON_LEFT) || Input.is_joy_button_pressed(0,JOY_XBOX_Y) || Input.is_joy_button_pressed(0,JOY_XBOX_A) || Input.is_joy_button_pressed(0,JOY_XBOX_B) || Input.is_joy_button_pressed(0,JOY_SELECT) || Input.is_joy_button_pressed(0,JOY_START) || Input.is_joy_button_pressed(0,JOY_L) || Input.is_joy_button_pressed(0,JOY_R) || Input.is_key_pressed(KEY_ESCAPE) || Input.is_key_pressed(KEY_ENTER)):
+	if Global.sk && (Input.is_mouse_button_pressed(BUTTON_LEFT) || event is InputEventScreenTouch || Input.is_joy_button_pressed(0,JOY_XBOX_Y) || Input.is_joy_button_pressed(0,JOY_XBOX_A) || Input.is_joy_button_pressed(0,JOY_XBOX_B) || Input.is_joy_button_pressed(0,JOY_SELECT) || Input.is_joy_button_pressed(0,JOY_START) || Input.is_joy_button_pressed(0,JOY_L) || Input.is_joy_button_pressed(0,JOY_R) || Input.is_key_pressed(KEY_ESCAPE) || Input.is_key_pressed(KEY_ENTER)):
 		get_tree().quit()

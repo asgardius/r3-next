@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://sprites/antenna.png" type="Texture" id=1]
 [ext_resource path="res://fonts/title.tres" type="DynamicFont" id=2]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
+[ext_resource path="res://backgounds/radio.gd" type="Script" id=4]
+[ext_resource path="res://backgounds/Label3.gd" type="Script" id=5]
 
 [node name="radio" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 438.0
@@ -35,3 +38,4 @@ margin_left = 158.0
 margin_top = 593.0
 margin_right = 198.0
 margin_bottom = 607.0
+script = ExtResource( 5 )

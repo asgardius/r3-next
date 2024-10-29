@@ -1,6 +1,6 @@
 extends Label
 var previoustime
-const savegame = preload("res://save.gd")
+var savegame = load("res://save.gd")
 
 func _ready():
 	previoustime = int(Global.levelmax[Global.gamelevel])

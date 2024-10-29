@@ -10,10 +10,10 @@ var hiscoresfile = "user://hiscores.save"
 var gamelevel
 var levelmax
 var firstrun
-var musictracks = ["res://music/x-force.wav", "res://music/alien-bulls.wav", "res://music/eternity.wav", "res://music/truth.wav", "res://music/broken.wav", "res://music/maran.wav", "res://music/orion.wav", "res://music/rose.wav", "res://music/oskars.wav", "res://music/rock.wav", "res://music/yes-i-see.wav", "res://music/tekilla.wav", "res://music/sweetest-sin.wav"]
+var musictracks = ["res://music/x-force.ogg", "res://music/alien-bulls.ogg", "res://music/eternity.ogg", "res://music/truth.ogg", "res://music/broken.ogg", "res://music/maran.ogg", "res://music/orion.ogg", "res://music/rose.ogg", "res://music/oskars.ogg", "res://music/rock.ogg", "res://music/yes-i-see.ogg", "res://music/tekilla.ogg", "res://music/sweetest-sin.ogg"]
 var sfxtracks = ["res://sfx/title.wav", "res://sfx/crash.ogg", "res://sfx/complete.ogg"]
 var debug = false
-var release = "R0.1.4-beta"
+var release = "R0.2.0-beta"
 var sk = false
 var xm = 0
 var ym = 0

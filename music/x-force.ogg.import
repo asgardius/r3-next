@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/x-force.ogg-70a575b6b3ff780c33d393d32fd75027.oggstr"
+
+[deps]
+
+source_file="res://music/x-force.ogg"
+dest_files=[ "res://.import/x-force.ogg-70a575b6b3ff780c33d393d32fd75027.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

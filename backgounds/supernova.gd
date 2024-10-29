@@ -4,7 +4,7 @@ var crash := AudioStreamPlayer.new()
 var wait
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(crash)
 	var titlemusic = load(Global.sfxtracks[1])
 	crash.stream = titlemusic
@@ -19,7 +19,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
 
@@ -27,9 +27,9 @@ func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/scene.tscn")
+		get_tree().change_scene("res://levels/scene.tscn")
 	else:
-		get_tree().change_scene_to_file("res://title.tscn")
+		get_tree().change_scene("res://title.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

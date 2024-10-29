@@ -1,6 +1,6 @@
 extends Control
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$"VBoxContainer/Music".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,13 +28,13 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
+	get_tree().change_scene("res://levels/debug.tscn")
 
 
 
 func _on_music_pressed():
-	get_tree().change_scene_to_file("res://levels/musictest.tscn")
+	get_tree().change_scene("res://levels/musictest.tscn")
 
 
 func _on_sfx_pressed():
-	get_tree().change_scene_to_file("res://levels/sfxtest.tscn")
+	get_tree().change_scene("res://levels/sfxtest.tscn")

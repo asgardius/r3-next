@@ -1,6 +1,6 @@
 extends Control
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$"VBoxContainer/Galaxy".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -42,25 +42,25 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
+	get_tree().change_scene("res://levels/debug.tscn")
 
 
 func _on_galaxy_pressed():
 	Global.live = 1
 	Global.gamelevel = 1
-	get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
+	get_tree().change_scene("res://backgounds/galaxy.tscn")
 
 
 func _on_wormhole_pressed():
 	Global.live = 1
 	Global.gamelevel = 1
-	get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+	get_tree().change_scene("res://backgounds/wormhole.tscn")
 
 
 func _on_abstract_pressed():
 	Global.live = 1
 	Global.gamelevel = 2
-	get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
+	get_tree().change_scene("res://backgounds/abstract.tscn")
 
 
 func _on_galaxy_2_pressed():
@@ -91,4 +91,4 @@ func _on_credits_pressed():
 	Global.gamelevel = 1
 	Global.live = 0
 	Global.time = 99999
-	get_tree().change_scene_to_file("res://levels/credits.tscn")
+	get_tree().change_scene("res://levels/credits.tscn")

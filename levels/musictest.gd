@@ -3,7 +3,7 @@ extends Control
 var player := AudioStreamPlayer.new()
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
 	$"VBoxContainer/Title Screen".grab_focus()
 
@@ -16,7 +16,7 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()
-	if Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_X):
+	if Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_XBOX_X):
 		player.stop()
 		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
@@ -34,7 +34,7 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/soundtest.tscn")
+	get_tree().change_scene("res://levels/soundtest.tscn")
 
 
 func _on_title_screen_pressed():
