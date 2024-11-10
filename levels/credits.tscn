@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://backgounds/nebula_-_6044 (720p).ogv" type="VideoStream" id=1]
 [ext_resource path="res://sprites/ss.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://fonts/about.tres" type="DynamicFont" id=4]
 [ext_resource path="res://levels/roll.gd" type="Script" id=5]
 [ext_resource path="res://levels/credits.gd" type="Script" id=6]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=7]
 
 [node name="credits" type="Node2D"]
 script = ExtResource( 6 )
@@ -74,6 +75,10 @@ Provided as a replacement for a HP 14 laptop that died while running Genshin Imp
 Steam Deck
 Arch Linux Rolling
 Provided by Evelyn Freeman
+
+Pinephone
+Debian 12
+Provided by Kimberly Arch
 
 Feedback
 El Suavecito
@@ -482,3 +487,5 @@ You can reuse assets for non-commercial purposes only
 Be kind and have a happy unfunaversary"
 align = 1
 script = ExtResource( 5 )
+
+[node name="Bottomhud" parent="." instance=ExtResource( 7 )]
