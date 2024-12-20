@@ -14,6 +14,8 @@ Download links https://elda.asgardius.company/r3-game-dl/
 
 Bittorrent downloads https://elda.asgardius.company/r3-game-torrent/
 
+You can download game soundtrack at https://elda.asgardius.company/game-ost/
+
 Remember: Godot Does what Unitydn't (if you are from the 1990 decade you will know where it came from)
 
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
