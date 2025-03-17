@@ -185,3 +185,12 @@ custom_fonts/font = ExtResource( 4 )
 script = ExtResource( 15 )
 
 [node name="Bottomhud" parent="." instance=ExtResource( 14 )]
+
+[node name="Home" type="Button" parent="."]
+margin_left = 18.0
+margin_top = 13.0
+margin_right = 78.0
+margin_bottom = 43.0
+text = "Home"
+
+[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]

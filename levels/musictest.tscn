@@ -37,15 +37,15 @@ text = "Music Test"
 align = 1
 valign = 1
 
-[node name="Stop" type="Label" parent="."]
+[node name="Bottomhud" parent="." instance=ExtResource( 2 )]
+
+[node name="Stop" type="Button" parent="."]
 margin_left = 5.0
 margin_top = 672.0
-margin_right = 230.0
-margin_bottom = 700.0
+margin_right = 261.0
+margin_bottom = 702.0
 custom_fonts/font = ExtResource( 1 )
 text = "Press X to stop playback"
-
-[node name="Bottomhud" parent="." instance=ExtResource( 2 )]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 510.5
@@ -54,116 +54,117 @@ margin_right = 769.5
 margin_bottom = 808.0
 
 [node name="Title Screen" type="Button" parent="VBoxContainer"]
-margin_right = 267.0
-margin_bottom = 34.0
+margin_right = 292.0
+margin_bottom = 30.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 1 )
 text = "Title Screen: X-Force Theme"
 
 [node name="Galaxy" type="Button" parent="VBoxContainer"]
-margin_top = 38.0
-margin_right = 267.0
-margin_bottom = 72.0
+margin_top = 34.0
+margin_right = 292.0
+margin_bottom = 64.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 1 )
 text = "Galaxy"
 
 [node name="Wormhole" type="Button" parent="VBoxContainer"]
-margin_top = 76.0
-margin_right = 267.0
-margin_bottom = 110.0
+margin_top = 68.0
+margin_right = 292.0
+margin_bottom = 98.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 2 )
 text = "Wormhole"
 
 [node name="Abstract" type="Button" parent="VBoxContainer"]
-margin_top = 114.0
-margin_right = 267.0
-margin_bottom = 148.0
+margin_top = 102.0
+margin_right = 292.0
+margin_bottom = 132.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Abstract"
 
 [node name="Galaxy2" type="Button" parent="VBoxContainer"]
-margin_top = 152.0
-margin_right = 267.0
-margin_bottom = 186.0
+margin_top = 136.0
+margin_right = 292.0
+margin_bottom = 166.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Galaxy2"
 
 [node name="Lagoon" type="Button" parent="VBoxContainer"]
-margin_top = 190.0
-margin_right = 267.0
-margin_bottom = 224.0
+margin_top = 170.0
+margin_right = 292.0
+margin_bottom = 200.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Lagoon"
 
 [node name="Orion" type="Button" parent="VBoxContainer"]
-margin_top = 228.0
-margin_right = 267.0
-margin_bottom = 262.0
+margin_top = 204.0
+margin_right = 292.0
+margin_bottom = 234.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Orion"
 
 [node name="Space" type="Button" parent="VBoxContainer"]
-margin_top = 266.0
-margin_right = 267.0
-margin_bottom = 300.0
+margin_top = 238.0
+margin_right = 292.0
+margin_bottom = 268.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Space"
 
 [node name="Stars" type="Button" parent="VBoxContainer"]
-margin_top = 304.0
-margin_right = 267.0
-margin_bottom = 338.0
+margin_top = 272.0
+margin_right = 292.0
+margin_bottom = 302.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Stars"
 
 [node name="Universe" type="Button" parent="VBoxContainer"]
-margin_top = 342.0
-margin_right = 267.0
-margin_bottom = 376.0
+margin_top = 306.0
+margin_right = 292.0
+margin_bottom = 336.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Universe"
 
 [node name="Credits 1" type="Button" parent="VBoxContainer"]
-margin_top = 380.0
-margin_right = 267.0
-margin_bottom = 414.0
+margin_top = 340.0
+margin_right = 292.0
+margin_bottom = 370.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Credits 1"
 
 [node name="Credits 2" type="Button" parent="VBoxContainer"]
-margin_top = 418.0
-margin_right = 267.0
-margin_bottom = 452.0
+margin_top = 374.0
+margin_right = 292.0
+margin_bottom = 404.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Credits 2"
 
 [node name="Credits 3" type="Button" parent="VBoxContainer"]
-margin_top = 456.0
-margin_right = 267.0
-margin_bottom = 490.0
+margin_top = 408.0
+margin_right = 292.0
+margin_bottom = 438.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Credits 3"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
-margin_top = 494.0
-margin_right = 267.0
-margin_bottom = 528.0
+margin_top = 442.0
+margin_right = 292.0
+margin_bottom = 472.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "Back"
 
+[connection signal="pressed" from="Stop" to="." method="_on_Stop_pressed"]
 [connection signal="pressed" from="VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
 [connection signal="pressed" from="VBoxContainer/Galaxy" to="." method="_on_galaxy_pressed"]
 [connection signal="pressed" from="VBoxContainer/Wormhole" to="." method="_on_wormhole_pressed"]

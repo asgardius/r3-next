@@ -100,3 +100,7 @@ func _on_credits_2_pressed():
 func _on_credits_3_pressed():
 	player.stream = load(Global.musictracks[12])
 	player.play(0)
+
+
+func _on_Stop_pressed():
+	player.stop()

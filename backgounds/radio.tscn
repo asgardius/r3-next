@@ -30,7 +30,7 @@ margin_top = 400.0
 margin_right = 1280.0
 margin_bottom = 546.0
 custom_fonts/font = ExtResource( 3 )
-text = "Press Enter or B to return to title"
+text = "Click or Press Enter or B to return to title"
 align = 1
 
 [node name="Label3" type="Label" parent="."]

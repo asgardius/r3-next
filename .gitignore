@@ -3,3 +3,7 @@
 The Red Robot Radio.arm64
 The Red Robot Radio.pck
 The Red Robot Radio.x86_64
+The Red Robot Radio.apk
+The Red Robot Radio.apk.idsig
+android/
+export_presets.cfg

@@ -24,12 +24,12 @@ custom_fonts/font = ExtResource( 2 )
 text = "Your spaceship crashed"
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 323.0
-margin_top = 483.0
-margin_right = 920.0
-margin_bottom = 538.0
+margin_left = 283.0
+margin_top = 480.0
+margin_right = 1096.0
+margin_bottom = 535.0
 custom_fonts/font = ExtResource( 3 )
-text = "Press Enter or B to return to title"
+text = "Click or press Enter or B to return to title"
 
 [node name="Label3" type="Label" parent="."]
 margin_left = 158.0

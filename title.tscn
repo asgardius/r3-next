@@ -42,12 +42,12 @@ valign = 1
 script = ExtResource( 5 )
 
 [node name="start" type="Label" parent="."]
-margin_left = 364.0
+margin_left = 351.0
 margin_top = 602.0
-margin_right = 834.0
+margin_right = 984.0
 margin_bottom = 657.0
 custom_fonts/font = ExtResource( 8 )
-text = "Press B or Enter start"
+text = "Click or press B or Enter to start"
 align = 1
 script = ExtResource( 6 )
 
@@ -67,7 +67,7 @@ margin_top = 656.0
 margin_right = 809.0
 margin_bottom = 705.0
 custom_fonts/font = ExtResource( 9 )
-text = "2020-2024 Page Asgardius GNU General Public License 3
+text = "2020-2025 Page Asgardius GNU General Public License 3
 2016-2024 Asgardius Virtualx Project"
 align = 1
 
