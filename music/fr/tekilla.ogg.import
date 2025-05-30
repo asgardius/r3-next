@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tekilla.ogg-fe074a73c4e0ae838519b6060595df55.oggstr"
+
+[deps]
+
+source_file="res://music/fr/tekilla.ogg"
+dest_files=[ "res://.import/tekilla.ogg-fe074a73c4e0ae838519b6060595df55.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

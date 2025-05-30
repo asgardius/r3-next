@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/alien-bulls.ogg-748f5de0eb7c8deedfcc4336aacdaad3.oggstr"
+
+[deps]
+
+source_file="res://music/rl/alien-bulls.ogg"
+dest_files=[ "res://.import/alien-bulls.ogg-748f5de0eb7c8deedfcc4336aacdaad3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

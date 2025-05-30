@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/orion.ogg-624318568904e7729adde0c35b10c416.oggstr"
+
+[deps]
+
+source_file="res://music/rl/orion.ogg"
+dest_files=[ "res://.import/orion.ogg-624318568904e7729adde0c35b10c416.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

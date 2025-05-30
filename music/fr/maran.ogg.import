@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/maran.ogg-1728b69e7fd434a969085b614909d32b.oggstr"
+
+[deps]
+
+source_file="res://music/fr/maran.ogg"
+dest_files=[ "res://.import/maran.ogg-1728b69e7fd434a969085b614909d32b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

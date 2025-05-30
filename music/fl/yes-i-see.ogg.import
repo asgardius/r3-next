@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/yes-i-see.ogg-556fc889d2ec0eded42d7d7fb787e774.oggstr"
+
+[deps]
+
+source_file="res://music/fl/yes-i-see.ogg"
+dest_files=[ "res://.import/yes-i-see.ogg-556fc889d2ec0eded42d7d7fb787e774.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

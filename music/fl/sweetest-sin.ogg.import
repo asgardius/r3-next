@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sweetest-sin.ogg-6be6eded38018d49311f1895e80b4929.oggstr"
+
+[deps]
+
+source_file="res://music/fl/sweetest-sin.ogg"
+dest_files=[ "res://.import/sweetest-sin.ogg-6be6eded38018d49311f1895e80b4929.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

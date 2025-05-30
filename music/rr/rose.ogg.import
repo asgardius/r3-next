@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rose.ogg-53b6c3451f90fdbc8ea341e7cadc8c2b.oggstr"
+
+[deps]
+
+source_file="res://music/rr/rose.ogg"
+dest_files=[ "res://.import/rose.ogg-53b6c3451f90fdbc8ea341e7cadc8c2b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
