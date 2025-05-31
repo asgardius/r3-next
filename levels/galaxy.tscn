@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://sprites/asteroid.png" type="Texture" id=1]
 [ext_resource path="res://sprites/sat.png" type="Texture" id=2]
@@ -22,6 +22,10 @@
 [ext_resource path="res://levels/css1.gd" type="Script" id=20]
 [ext_resource path="res://levels/wall4.gd" type="Script" id=21]
 [ext_resource path="res://levels/galaxy.gd" type="Script" id=22]
+[ext_resource path="res://music/fr/alien-bulls.ogg" type="AudioStream" id=23]
+[ext_resource path="res://music/rl/alien-bulls.ogg" type="AudioStream" id=24]
+[ext_resource path="res://music/rr/alien-bulls.ogg" type="AudioStream" id=25]
+[ext_resource path="res://music/fl/alien-bulls.ogg" type="AudioStream" id=26]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.0070922, 1 )
@@ -192,5 +196,39 @@ margin_top = 13.0
 margin_right = 78.0
 margin_bottom = 43.0
 text = "Home"
+
+[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
+stream = ExtResource( 26 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+
+[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
+stream = ExtResource( 23 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+
+[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+stream = ExtResource( 24 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+
+[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+stream = ExtResource( 25 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+
+[node name="Camera" type="Camera" parent="."]
 
 [connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]

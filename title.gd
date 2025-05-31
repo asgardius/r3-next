@@ -15,9 +15,11 @@ func _ready():
 	Global.gamelevel = null
 	add_child(bgsound)
 	add_child(frank)
-	var titlemusic = load(Global.musictracks[0])
+	var titlemusic = load(Global.musictrackc[0])
 	var r3jingle = load(Global.sfxtracks[0])
 	bgsound.stream = titlemusic
+	bgsound.mix_target = 2
+	frank.mix_target = 2
 	bgsound.play(0)
 	frank.stream = r3jingle
 	frank.play(0)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://backgounds/nebula_-_6044 (720p).ogv" type="VideoStream" id=1]
 [ext_resource path="res://sprites/ss.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://levels/roll.gd" type="Script" id=5]
 [ext_resource path="res://levels/credits.gd" type="Script" id=6]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=7]
+[ext_resource path="res://music/rr/x-force.ogg" type="AudioStream" id=8]
 
 [node name="credits" type="Node2D"]
 script = ExtResource( 6 )
@@ -489,3 +490,30 @@ align = 1
 script = ExtResource( 5 )
 
 [node name="Bottomhud" parent="." instance=ExtResource( 7 )]
+
+[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+
+[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+
+[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+
+[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+stream = ExtResource( 8 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+
+[node name="Camera" type="Camera" parent="."]

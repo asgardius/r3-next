@@ -6,8 +6,9 @@ var bgsound := AudioStreamPlayer.new()
 
 func _ready():
 	add_child(bgsound)
-	var titlemusic = load(Global.musictracks[1])
+	var titlemusic = load(Global.musictrackc[1])
 	bgsound.stream = titlemusic
+	bgsound.mix_target = 2
 	bgsound.play(0)
 	#pass # Replace with function body.
 

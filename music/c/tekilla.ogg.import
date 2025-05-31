@@ -11,5 +11,5 @@ dest_files=[ "res://.import/tekilla.ogg-0472763a998a0314e87a1ee54fa5ceb3.oggstr"
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

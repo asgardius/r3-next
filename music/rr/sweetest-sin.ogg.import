@@ -11,5 +11,5 @@ dest_files=[ "res://.import/sweetest-sin.ogg-c06628ca0487d2b531509843fd431d1d.og
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
