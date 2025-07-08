@@ -56,7 +56,7 @@ func _process(delta):
 func _input(event):
 	if Input.is_key_pressed(KEY_ESCAPE) || (Input.is_joy_button_pressed(0,JOY_XBOX_A) && (Input.is_joy_button_pressed(0,JOY_XBOX_B))):
 		get_tree().change_scene("res://levels/debug.tscn")
-	joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+	joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\n"+str(Input.get_joy_guid(0))+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
 	lxaxis.set_text("Left X Axis "+str(Input.get_joy_axis(0,JOY_ANALOG_LX)))
 	lyaxis.set_text("Left Y Axis "+str(Input.get_joy_axis(0,JOY_ANALOG_LY)))
 	rxaxis.set_text("Right X Axis "+str(Input.get_joy_axis(0,JOY_ANALOG_RX)))
